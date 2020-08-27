@@ -18,18 +18,19 @@ if [ $USER ];then
     echo aa
     my-repositories $NAME >> ./$NAME.list
 elif [ $ORG ];then
-    curl -u mirachan010 "https://api.github.com/orgs/$NAME/repos?per_page=100&page=1">$NAME_1
-    cat $NAME_1|jq -r .[].name > $NAME.list
-    echo `cat $NAME.list|wc -l`
+    curl -u mirachan010 "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">${NAME}_1
+    cat ${NAME}_1|jq -r .[].name > ${NAME}.list
+    echo `cat ${NAME}.list|wc -l`
+    rm ${NAME}_1
 fi
 Max=`cat $NAME.list |wc -l`
 COUNT=0
 VCOUNT=0
 while read line
 do
-    git clone git://github.com/$NAME/$line --depth=1
+    git clone git://github.com/${NAME}/$line --depth=1
     if [ -d ./$line/autoload -o -d ./$line/plugin -o -f ./$line/colors/*.vim ];then
-        echo $NAME/$line >> list_new
+        echo ${NAME}/$line >> list_new
         VCOUNT=$(( VCOUNT + 1 ))
     fi
     COUNT=$(( COUNT + 1 ))

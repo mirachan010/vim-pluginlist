@@ -5,6 +5,7 @@ airblade/vim-localorie
 airblade/vim-matchquote
 airblade/vim-rooter
 c000/rapidfire.vim
+dense-analysis/ale
 godlygeek/colorchart
 godlygeek/csapprox
 godlygeek/from_c_to_pep249
@@ -572,4 +573,3 @@ Yggdroot/LeaderF-marks
 Yggdroot/twoline
 Yggdroot/vim-mark
 Yggdroot/vim-plug
-dense-analysis/ale
