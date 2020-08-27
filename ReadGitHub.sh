@@ -43,7 +43,8 @@ if [ -f ./list_new ];then
     comm <(sort ./list_new) <(sort ./list) -23 >> list
     rm ./list_new
     git add list
-    git commit -m "add $(NAME)"
+    git commit -m "add ${NAME}"
+    git push
 fi
 rm ./$NAME.list
 sort -u list -o list
