@@ -446,6 +446,7 @@ Shougo/vim-hug-neovim-rpc
 Shougo/vimproc.vim
 Shougo/vimshell.vim
 Shougo/vinarise.vim
+SirVer/ultisnips
 skanehira/badapple.vim
 skanehira/code2img.vim
 skanehira/docker-compose.vim
