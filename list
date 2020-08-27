@@ -561,6 +561,10 @@ vim-jp/vim-sweep_trail
 vim-jp/vim-vimlparser
 vim-jp/vital-complete
 vim-jp/vital.vim
+w0rp/jasmine-test-runner
+w0rp/python_tools
+w0rp/vim
+w0rp/vim-speech
 Yggdroot/hiPairs
 Yggdroot/LeaderF
 Yggdroot/LeaderF-changes
@@ -568,7 +572,4 @@ Yggdroot/LeaderF-marks
 Yggdroot/twoline
 Yggdroot/vim-mark
 Yggdroot/vim-plug
-w0rp/jasmine-test-runner
-w0rp/python_tools
-w0rp/vim
-w0rp/vim-speech
+dense-analysis/ale
