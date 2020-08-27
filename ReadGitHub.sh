@@ -28,7 +28,7 @@ VCOUNT=0
 while read line
 do
     git clone git://github.com/$NAME/$line --depth=1
-    if [ -d ./$line/autoload -o -d ./$line/plugin ];then
+    if [ -d ./$line/autoload -o -d ./$line/plugin -o -f ./$line/colors/*.vim ];then
         echo $NAME/$line >> list_new
         VCOUNT=$(( VCOUNT + 1 ))
     fi
