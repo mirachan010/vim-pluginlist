@@ -23,6 +23,7 @@ elif [ $ORG ];then
     echo `cat ${NAME}.list|wc -l`
     rm ${NAME}_1
 fi
+sort -u ${NAME}.list -o ${NAME}.list
 Max=`cat $NAME.list |wc -l`
 COUNT=0
 VCOUNT=0
@@ -43,10 +44,10 @@ echo checking
 if [ -f ./list_new ];then
     comm <(sort ./list_new) <(sort ./list) -23 >> list
     rm ./list_new
+    sort -u list -o list
     git add list
     git commit -m "add ${NAME}"
     git push
 fi
 rm ./$NAME.list
-sort -u list -o list
 echo finish
