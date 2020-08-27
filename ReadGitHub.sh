@@ -1,4 +1,10 @@
 #!/bin/bash
+if [ $# != 1 ]; then
+    echo 引数エラー: $*
+    exit 1
+else
+    echo OK
+fi
 my-repositories $1 > ./$1.list
 Max=`cat $1.list |wc -l`
 COUNT=0
@@ -20,4 +26,5 @@ echo checking
 comm <(sort ./list_new) <(sort ./list) -23 >> list
 rm ./$1.list
 rm ./list_new
+sort -u list -o list
 echo finish
