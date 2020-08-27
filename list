@@ -573,3 +573,7 @@ Yggdroot/LeaderF-marks
 Yggdroot/twoline
 Yggdroot/vim-mark
 Yggdroot/vim-plug
+sheerun/vim-inspect
+sheerun/vim-polyglot
+sheerun/vimrc
+sheerun/vim-wombat-scheme
