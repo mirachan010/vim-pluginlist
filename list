@@ -178,6 +178,7 @@ lambdalisue/vital-Vim-Validate
 lambdalisue/vital-Web-API-GitHub
 lambdalisue/vital-Whisky
 lambdalisue/wifi.vim
+majutsushi/tagbar
 mattn/asyncomplete-google-suggest.vim
 mattn/asyncomplete-lsp.vim
 mattn/asyncomplete.vim
