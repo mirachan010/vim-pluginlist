@@ -47,7 +47,6 @@ if [ -f ./list_new ];then
     sort -u list -o list
     git add list
     git commit -m "add ${NAME}"
-    git push
 fi
 rm ./$NAME.list
 echo finish
