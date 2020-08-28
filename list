@@ -49,6 +49,8 @@ itchyny/vim-spellbad-pattern
 itchyny/vim-term
 itchyny/vim-tmpbuffer
 itchyny/vim-winfix
+jiangmiao/advancer-abbreviation
+jiangmiao/auto-pairs
 junegunn/dummy1
 junegunn/dummy2
 junegunn/dummy3
