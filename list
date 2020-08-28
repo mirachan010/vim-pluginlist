@@ -625,6 +625,7 @@ vim-jp/vim-sweep_trail
 vim-jp/vim-vimlparser
 vim-jp/vital-complete
 vim-jp/vital.vim
+vim-syntastic/syntastic
 w0rp/jasmine-test-runner
 w0rp/python_tools
 w0rp/vim
