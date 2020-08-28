@@ -629,6 +629,11 @@ tpope/vim-tbone
 tpope/vim-unimpaired
 tpope/vim-vinegar
 unblevable/quick-scope
+Valloric/ListToggle
+Valloric/MatchTagAlways
+Valloric/vim-operator-highlight
+Valloric/vim-valloric-colorscheme
+Valloric/YouCompleteMe
 vim-airline/vim-airline
 vim-airline/vim-airline-themes
 vim-jp/autofmt
