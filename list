@@ -75,6 +75,11 @@ junegunn/vim-redis
 junegunn/vim-ruby-x
 junegunn/vim-slash
 junegunn/vim-xmark
+justinmk/nvim-repl
+justinmk/vim-dirvish
+justinmk/vim-gtfo
+justinmk/vim-sneak
+justinmk/vim-syntax-extra
 lambdalisue/attorney.vim
 lambdalisue/battery.vim
 lambdalisue/cactus.vim
