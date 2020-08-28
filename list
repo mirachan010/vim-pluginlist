@@ -4,6 +4,7 @@ airblade/vim-helptab
 airblade/vim-localorie
 airblade/vim-matchquote
 airblade/vim-rooter
+autozimu/LanguageClient-neovim
 c000/rapidfire.vim
 ctrlpvim/ctrlp.vim
 dense-analysis/ale
