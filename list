@@ -416,6 +416,8 @@ mattn/yamada2-vim
 mattn/yamada-vim
 mattn/yapc-asia-timetable-viewer-vim
 mattn/zencoding-vim
+natebosch/vim-lsc
+natebosch/vim-lsc-dart
 ncm2/float-preview.nvim
 ncm2/ncm2
 ncm2/ncm2-bufword
