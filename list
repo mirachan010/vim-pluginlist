@@ -5,6 +5,7 @@ airblade/vim-localorie
 airblade/vim-matchquote
 airblade/vim-rooter
 c000/rapidfire.vim
+ctrlpvim/ctrlp.vim
 dense-analysis/ale
 godlygeek/colorchart
 godlygeek/csapprox
