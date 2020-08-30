@@ -9,17 +9,23 @@ do
         -o)
             ORG=1
             NAME=$2
-            shift
             ;;
+        *)
+            USER=1
+            ORG=1
+            NAME=$1
+            ;;
+
     esac
     shift
 done
 if [ $USER ];then
     echo aa
     my-repositories $NAME >> ./$NAME.list
-elif [ $ORG ];then
-    curl -u mirachan010 "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">${NAME}_1
-    cat ${NAME}_1|jq -r .[].name > ${NAME}.list
+fi
+if [ $ORG ];then
+    curl -u mirachan010 "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">>${NAME}_1
+    cat ${NAME}_1|jq -r .[].name >> ${NAME}.list
     echo `cat ${NAME}.list|wc -l`
     rm ${NAME}_1
 fi
