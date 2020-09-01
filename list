@@ -23,6 +23,8 @@ dhruvasagar/vim-table-mode
 dhruvasagar/vim-testify
 dhruvasagar/vim-zoom
 farmergreg/vim-lastplace
+fatih/vim-go
+fatih/vim-hclfmt
 godlygeek/colorchart
 godlygeek/csapprox
 godlygeek/from_c_to_pep249
