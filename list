@@ -879,6 +879,7 @@ Valloric/MatchTagAlways
 Valloric/vim-operator-highlight
 Valloric/vim-valloric-colorscheme
 Valloric/YouCompleteMe
+Valodim/vim-zsh-completion
 vim-airline/vim-airline
 vim-airline/vim-airline-themes
 vim-jp/autofmt
