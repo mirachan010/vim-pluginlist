@@ -4,9 +4,11 @@ do
     case $OPT in
         -u)
             USER=1
+            ORG=0
             NAME=$2
             ;;
         -o)
+            USER=0
             ORG=1
             NAME=$2
             ;;
@@ -15,15 +17,14 @@ do
             ORG=1
             NAME=$1
             ;;
-
     esac
     shift
 done
-if [ $USER ];then
+if [ $USER -eq 1 ];then
     echo aa
     my-repositories $NAME >> ./$NAME.list
 fi
-if [ $ORG ];then
+if [ $ORG -eq 1 ];then
     curl -u mirachan010 "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">>${NAME}_1
     cat ${NAME}_1|jq -r .[].name >> ${NAME}.list
     echo `cat ${NAME}.list|wc -l`
