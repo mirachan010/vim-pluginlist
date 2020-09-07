@@ -30,9 +30,9 @@ if [ $ORG -eq 1 ];then
 fi
 touch ./checkedfiles/$NAME.list
 sort -u ./${NAME}.list -o ./${NAME}.list
-comm <(sort ./$NAME.list) <(sort ./checkedfiles/$NAME.list) -23 > ./$NAME.list
-cat ./$NAME.list >> ./checkedfiles/$NAME.list
-Max=`cat $NAME.list |wc -l`
+comm <(sort ./$NAME.list) <(sort ./checkedfiles/$NAME.list) -23 > ./check.list
+rm ./$NAME.list
+Max=`cat ./check.list |wc -l`
 COUNT=0
 VCOUNT=0
 while read line
@@ -47,7 +47,8 @@ do
     rm -rf ./$line &
     sleep 10 &
     wait
-done < $NAME.list
+done < ./check.list
+rm ./check.list
 echo checking
 if [ -f ./list_new ];then
     comm <(sort ./list_new) <(sort ./list) -23 >> list
@@ -56,5 +57,4 @@ if [ -f ./list_new ];then
     git add list
     git commit -m "add ${NAME}"
 fi
-rm ./$NAME.list
 echo finish
