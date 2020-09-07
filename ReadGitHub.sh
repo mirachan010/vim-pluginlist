@@ -15,9 +15,10 @@ do
     esac
     shift
 done
+touch ./$NAME.list
 if [ $USER -eq 1 ];then
     echo download repositories list
-    my-repositories $NAME >> ./$NAME.list
+    my-repositories $NAME > ./$NAME.list
     echo downloaded repositories list
 fi
 if [ $ORG -eq 1 ];then
@@ -28,9 +29,10 @@ if [ $ORG -eq 1 ];then
     echo `cat ${NAME}.list|wc -l`
     rm ${NAME}_1
 fi
-touch ./checkedfiles/$NAME.list
-sort -u ./${NAME}.list -o ./${NAME}.list
-comm <(sort ./$NAME.list) <(sort ./checkedfiles/$NAME.list) -23 > ./check.list
+touch ./CheckedFiles/$NAME.list
+comm <(sort ./$NAME.list) <(sort ./CheckedFiles/$NAME.list) -23 > ./check.list
+cat ./check.list>>./CheckedFiles/$NAME.list
+sort -u ./CheckedFiles/${NAME}.list -o ./CheckedFiles/${NAME}.list
 rm ./$NAME.list
 Max=`cat ./check.list |wc -l`
 COUNT=0
