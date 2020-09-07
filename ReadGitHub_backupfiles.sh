@@ -16,17 +16,22 @@ do
     shift
 done
 if [ $USER -eq 1 ];then
-    echo aa
+    echo download repositories list
     my-repositories $NAME >> ./$NAME.list
-    echo bb
+    echo downloaded repositories list
 fi
 if [ $ORG -eq 1 ];then
+    echo download repositories list
     curl -u mirachan010 "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">>${NAME}_1
-    cat ${NAME}_1|jq -r .[].name >> ${NAME}.list
+    echo downloaded repositories list
+    cat ${NAME}_1|jq -r .[].name >> ./${NAME}.list
     echo `cat ${NAME}.list|wc -l`
     rm ${NAME}_1
 fi
-sort -u ${NAME}.list -o ${NAME}.list
+touch ./checkedfiles/$NAME.list
+sort -u ./${NAME}.list -o ./${NAME}.list
+comm <(sort ./$NAME.list) <(sort ./checkedfiles/$NAME.list) -23 > ./$NAME.list
+cat ./$NAME.list >> ./checkedfiles/$NAME.list
 Max=`cat $NAME.list |wc -l`
 COUNT=0
 VCOUNT=0
