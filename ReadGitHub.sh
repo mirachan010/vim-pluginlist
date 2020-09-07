@@ -12,17 +12,13 @@ do
             ORG=1
             NAME=$2
             ;;
-        *)
-            USER=1
-            ORG=1
-            NAME=$1
-            ;;
     esac
     shift
 done
 if [ $USER -eq 1 ];then
     echo aa
     my-repositories $NAME >> ./$NAME.list
+    echo bb
 fi
 if [ $ORG -eq 1 ];then
     curl -u mirachan010 "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">>${NAME}_1
