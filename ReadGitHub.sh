@@ -56,7 +56,8 @@ if [ -f ./list_new ];then
     comm <(sort ./list_new) <(sort ./list) -23 >> list
     rm ./list_new
     sort -u list -o list
-    git add list
+    git add ./list
+    git add ./CheckedFiles/$NAME.list
     git commit -m "add ${NAME}"
 fi
 echo finish
