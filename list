@@ -615,6 +615,8 @@ Shougo/vim-hug-neovim-rpc
 Shougo/vimproc.vim
 Shougo/vimshell.vim
 Shougo/vinarise.vim
+simnalamburt/vim-mundo
+simnalamburt/vim-tiny-ime
 SirVer/ultisnips
 skanehira/badapple.vim
 skanehira/code2img.vim
