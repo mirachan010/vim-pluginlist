@@ -37,12 +37,19 @@ rm ./$NAME.list
 Max=`cat ./check.list |wc -l`
 COUNT=0
 VCOUNT=0
+COLOR=0
 while read line
 do
     git clone git://github.com/${NAME}/$line --depth=1
-    if [ -d ./$line/autoload -o -d ./$line/plugin -o -f ./$line/colors/*.vim ];then
+    if ls ./$line/colors/*.vim >/dev/null 2>&1;then
+        COLOR=1
+    else
+        COLOR=0
+    fi
+    if [ -d ./$line/autoload -o -d ./$line/plugin -o $COLOR -eq 1 ];then
         echo ${NAME}/$line >> list_new
         VCOUNT=$(( VCOUNT + 1 ))
+        COLOR=0
     fi
     COUNT=$(( COUNT + 1 ))
     echo $COUNT/$Max -- $VCOUNT
