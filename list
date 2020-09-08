@@ -483,6 +483,12 @@ neoclide/vim-easygit
 neoclide/vim-hug-neovim-rpc
 neoclide/vim-node-rpc
 neoclide/vim-prettier
+nightsense/cosmic_latte
+nightsense/night-and-day
+nightsense/rusticated
+nightsense/snow
+nightsense/stellarized
+nightsense/vim-crunchbang
 pangloss/vim-erlang
 pangloss/vim-simplefold
 patstockwell/vim-monokai-tasty
