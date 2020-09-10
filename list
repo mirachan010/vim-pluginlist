@@ -623,6 +623,7 @@ skanehira/code2img.vim
 skanehira/docker-compose.vim
 skanehira/docker.vim
 skanehira/generatedir.vim
+skanehira/gh.vim
 skanehira/google-map.vim
 skanehira/gql.vim
 skanehira/jo.vim
