@@ -64,7 +64,8 @@ if [ -f ./list_new ];then
     rm ./list_new
     sort -u list -o list
     git add ./list
-    git add ./CheckedFiles/$NAME.list
     git commit -m "add ${NAME}"
+    git add ./CheckedFiles/$NAME.list
+    git commit -m "new repos ${NAME}"
 fi
 echo finish
