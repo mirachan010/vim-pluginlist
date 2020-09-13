@@ -1,0 +1,11 @@
+completion-treesitter
+highlight.lua
+module-template
+neovim
+nvim-tree-docs
+nvim-treesitter
+playground
+tree-sitter
+tree-sitter-c
+tree-sitter-lua
+tree-sitter-query
