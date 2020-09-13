@@ -504,6 +504,12 @@ nightsense/vim-crunchbang
 nightsense/vimspectr
 nightsense/vrunchbang
 nightsense/wonka
+nvim-treesitter/completion-treesitter
+nvim-treesitter/highlight.lua
+nvim-treesitter/module-template
+nvim-treesitter/nvim-tree-docs
+nvim-treesitter/nvim-treesitter
+nvim-treesitter/playground
 pangloss/vim-erlang
 pangloss/vim-simplefold
 patstockwell/vim-monokai-tasty
