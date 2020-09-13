@@ -80,8 +80,10 @@ junegunn/goyo.vim
 junegunn/gv.vim
 junegunn/heytmux
 junegunn/limelight.vim
+junegunn/seoul256.vim
 junegunn/vader.vim
 junegunn/vim-after-object
+junegunn/vim-cfr
 junegunn/vim-easy-align
 junegunn/vim-emoji
 junegunn/vim-fnr
