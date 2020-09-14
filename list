@@ -33,6 +33,9 @@ godlygeek/netlib
 godlygeek/tabular
 godlygeek/vim-files
 godlygeek/windowlayout
+honza/dockerfile.vim
+honza/vim-snippets
+honza/writer.vim
 itchyny/calendar.vim
 itchyny/dictionary.vim
 itchyny/landscape.vim
