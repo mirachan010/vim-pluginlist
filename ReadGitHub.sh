@@ -31,8 +31,6 @@ if [ $ORG -eq 1 ];then
 fi
 touch ./CheckedFiles/$NAME.list
 comm <(sort ./$NAME.list) <(sort ./CheckedFiles/$NAME.list) -23 > ./check.list
-cat ./check.list>>./CheckedFiles/$NAME.list
-sort -u ./CheckedFiles/${NAME}.list -o ./CheckedFiles/${NAME}.list
 rm ./$NAME.list
 Max=`cat ./check.list |wc -l`
 COUNT=0
@@ -51,6 +49,7 @@ do
         VCOUNT=$(( VCOUNT + 1 ))
         COLOR=0
     fi
+    echo $line >> ./CheckedFiles/$NAME.list
     COUNT=$(( COUNT + 1 ))
     echo $COUNT/$Max -- $VCOUNT
     rm -rf ./$line &
@@ -63,6 +62,7 @@ if [ -f ./list_new ];then
     comm <(sort ./list_new) <(sort ./list) -23 >> list
     rm ./list_new
     sort -u list -o list
+    sort -u ./CheckedFiles/${NAME}.list -o ./CheckedFiles/${NAME}.list
     git add ./list
     git commit -m "add ${NAME}"
     git add ./CheckedFiles/$NAME.list
