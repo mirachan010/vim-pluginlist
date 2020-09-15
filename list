@@ -931,6 +931,7 @@ vim-scripts/0x7A69_dark.vim
 vim-scripts/256_darkdot
 vim-scripts/256-grayvim
 vim-scripts/256-jungle
+vim-scripts/285colors-with-az-menu
 vim-scripts/3DGlasses.vim
 vim-scripts/4NT-Bundle
 vim-scripts/abbott.vim
@@ -981,6 +982,7 @@ vim-scripts/align--Ahmad
 vim-scripts/AlignFromCursor
 vim-scripts/Align.vim
 vim-scripts/AllBuffersToOneWindow.vim
+vim-scripts/all-colors-pack
 vim-scripts/allfold
 vim-scripts/AlphaComplete
 vim-scripts/altercmd
@@ -1428,6 +1430,7 @@ vim-scripts/color-scheme-Faded-Black
 vim-scripts/color-scheme-Faded-White
 vim-scripts/ColorSchemeMenuMaker
 vim-scripts/ColorSchemePicker
+vim-scripts/colorschemer
 vim-scripts/colorscheme_template.vim
 vim-scripts/ColorSelect
 vim-scripts/colorselector
@@ -1438,6 +1441,7 @@ vim-scripts/color_toon
 vim-scripts/colorv.vim
 vim-scripts/ColorX
 vim-scripts/Colorzone
+vim-scripts/Colour-Sampler-Pack
 vim-scripts/Colour-theme-neon-pk
 vim-scripts/colqer
 vim-scripts/columcille.vim
@@ -1728,6 +1732,7 @@ vim-scripts/DuoTones-Dark
 vim-scripts/dusk
 vim-scripts/Dutyl
 vim-scripts/d.vim--Suhoverhov
+vim-scripts/dw_colors
 vim-scripts/dwm.vim
 vim-scripts/DynamicSigns
 vim-scripts/earendel
@@ -1738,6 +1743,7 @@ vim-scripts/Easy-alignment-to-column
 vim-scripts/easybuffer.vim
 vim-scripts/EasyClip
 vim-scripts/EasyClipRing.vim
+vim-scripts/EasyColour
 vim-scripts/EasyDigraph.vim
 vim-scripts/easydir.vim
 vim-scripts/easygit
@@ -1837,6 +1843,7 @@ vim-scripts/ExtractLinks
 vim-scripts/ExtractMatches
 vim-scripts/extradite.vim
 vim-scripts/exUtility
+vim-scripts/exVim
 vim-scripts/EZComment
 vim-scripts/ez_scroll
 vim-scripts/eZVim
@@ -2138,6 +2145,8 @@ vim-scripts/hexsearch.vim
 vim-scripts/hfile
 vim-scripts/HgCi
 vim-scripts/hgrev
+vim-scripts/HHCS
+vim-scripts/HHCS_D
 vim-scripts/hickop
 vim-scripts/HiCurLine
 vim-scripts/hier
@@ -2449,6 +2458,7 @@ vim-scripts/loremipsum
 vim-scripts/Loupe
 vim-scripts/louver.vim
 vim-scripts/love-launch
+vim-scripts/Low-Contrast-Color-Schemes
 vim-scripts/ls.vim
 vim-scripts/luainspect.vim
 vim-scripts/luarefvim
@@ -2544,6 +2554,7 @@ vim-scripts/midnight2.vim
 vim-scripts/midnight.vim
 vim-scripts/miko
 vim-scripts/milk.vim
+vim-scripts/mimicpak
 vim-scripts/Mines
 vim-scripts/minibufexplorerpp
 vim-scripts/minibufexpl.vim
@@ -2671,6 +2682,7 @@ vim-scripts/netrw.vim
 vim-scripts/NetSend.vim
 vim-scripts/Nette
 vim-scripts/neutron.vim
+vim-scripts/neverland.vim--All-colorschemes-suck
 vim-scripts/Neverness-colour-scheme
 vim-scripts/Never-Optimal-Wiki
 vim-scripts/nevfn
@@ -2686,6 +2698,7 @@ vim-scripts/Nibble
 vim-scripts/nicotine.vim
 vim-scripts/nightflight2.vim
 vim-scripts/nightflight.vim
+vim-scripts/nightshade.vim
 vim-scripts/Nightshimmer
 vim-scripts/nightsky
 vim-scripts/night.vim
@@ -3040,6 +3053,7 @@ vim-scripts/rainbow_csv.vim
 vim-scripts/rainbow-end
 vim-scripts/rainbow_parentheses.vim
 vim-scripts/Rainbow-Parenthsis-Bundle
+vim-scripts/rainbow.zip
 vim-scripts/rake.vim
 vim-scripts/Random-Tip-Displayer
 vim-scripts/random.vim
@@ -3165,6 +3179,7 @@ vim-scripts/RootIgnore
 vim-scripts/rootwater.vim
 vim-scripts/rotate.vim
 vim-scripts/ro-when-swapfound
+vim-scripts/Royal-Colorschemes
 vim-scripts/RPN
 vim-scripts/rslate
 vim-scripts/rslTools
@@ -3701,6 +3716,7 @@ vim-scripts/thermometer
 vim-scripts/Thesaurus
 vim-scripts/The-Stars-Color-Scheme
 vim-scripts/The-Vim-Gardener
+vim-scripts/thinkpad.vim
 vim-scripts/Thousand-separator
 vim-scripts/Threesome
 vim-scripts/throughpairs
@@ -4010,6 +4026,7 @@ vim-scripts/vim-cloud-buffer
 vim-scripts/vim-cmake-project
 vim-scripts/vim-coffee-script
 vim-scripts/VIM-Color-Picker
+vim-scripts/vim_colors
 vim-scripts/vim-colorscheme-switcher
 vim-scripts/vim-colors-pencil
 vim-scripts/vimcommander
@@ -4132,6 +4149,7 @@ vim-scripts/vim-operator-flashy
 vim-scripts/vimorator
 vim-scripts/VimOrganizer
 vim-scripts/vim-origami
+vim-scripts/VimOutliner
 vim-scripts/vim-packer
 vim-scripts/vim-pad
 vim-scripts/vim-paint
@@ -4264,6 +4282,7 @@ vim-scripts/VirMark.vim
 vim-scripts/virtualenv.vim
 vim-scripts/vis
 vim-scripts/VisIncr
+vim-scripts/viske
 vim-scripts/vison
 vim-scripts/visSum.vim
 vim-scripts/Visual-Cpp
@@ -4478,10 +4497,3 @@ Yggdroot/LeaderF-marks
 Yggdroot/twoline
 Yggdroot/vim-mark
 Yggdroot/vim-plug
-vim-scripts/285colors-with-az-menu
-vim-scripts/all-colors-pack
-vim-scripts/colorschemer
-vim-scripts/Colour-Sampler-Pack
-vim-scripts/dw_colors
-vim-scripts/EasyColour
-vim-scripts/exVim
