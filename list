@@ -385,6 +385,7 @@ mattn/vim-lsp
 mattn/vim-lsp1
 mattn/vim-lsp-icons
 mattn/vim-lsp-settings
+mattn/vim-main-branch-example
 mattn/vim-maketable
 mattn/vim-mastodon
 mattn/vim-metarw-etcd
