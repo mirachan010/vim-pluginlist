@@ -5,6 +5,8 @@ airblade/vim-localorie
 airblade/vim-matchquote
 airblade/vim-rooter
 autozimu/LanguageClient-neovim
+a/vim-snippets
+a/vim-trash-polka
 c000/rapidfire.vim
 ctrlpvim/ctrlp.vim
 dense-analysis/ale
