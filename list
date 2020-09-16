@@ -4493,6 +4493,8 @@ w0rp/python_tools
 w0rp/vim
 w0rp/vim-speech
 wklken/k-vim
+ycm-core/neomake
+ycm-core/YouCompleteMe
 Yggdroot/duoduo
 Yggdroot/hiPairs
 Yggdroot/LeaderF
