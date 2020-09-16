@@ -24,6 +24,8 @@ cocopon/svss.vim
 cocopon/todo.vim
 cocopon/vaffle.vim
 ctrlpvim/ctrlp.vim
+davidoc/taskpaper.vim
+davidoc/todo.txt-vim
 dense-analysis/ale
 dhruvasagar/packup
 dhruvasagar/vim-audiobox
