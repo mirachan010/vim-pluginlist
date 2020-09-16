@@ -1,0 +1,9 @@
+Could not resolve to a User with the login of 'ycm-core'.
+flake8-ycm
+llvm
+lsp-examples
+neomake
+regex
+vim-tools
+ycmd
+YouCompleteMe
