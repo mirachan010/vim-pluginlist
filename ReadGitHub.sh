@@ -53,7 +53,10 @@ do
         COLOR=0
         if [ -e ./$line/README.md ];then
             cp ./$line/README.md ./ReadMe/$NAME/$line
+        elif [ -e ./$line/README.mkd ]; then
+            cp ./$line/README.mkd ./ReadMe/$NAME/$line
         fi
+        touch ./ReadMe/$NAME/$line
     fi
     echo $line >> ./CheckedFiles/$NAME.list
     COUNT=$(( COUNT + 1 ))
