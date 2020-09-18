@@ -36,9 +36,12 @@ Max=`cat ./check.list |wc -l`
 COUNT=0
 VCOUNT=0
 COLOR=0
+if [ ! -d ./ReadMe/$NAME ]; then
+    mkdir ./ReadMe/$NAME
+fi
 while read line
 do
-    git clone git://github.com/${NAME}/$line --depth=1
+    git clone git://github.com/${NAME}/$line --depth=1 > /dev/null 2>&1
     if ls ./$line/colors/*.vim >/dev/null 2>&1;then
         COLOR=1
     else
@@ -48,6 +51,9 @@ do
         echo ${NAME}/$line >> list_new
         VCOUNT=$(( VCOUNT + 1 ))
         COLOR=0
+        if [ -e ./$line/README.md ];then
+            cp ./$line/README.md ./ReadMe/$NAME/$line
+        fi
     fi
     echo $line >> ./CheckedFiles/$NAME.list
     COUNT=$(( COUNT + 1 ))
