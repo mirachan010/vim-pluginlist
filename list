@@ -23,6 +23,8 @@ cocopon/snapbuffer.vim
 cocopon/svss.vim
 cocopon/todo.vim
 cocopon/vaffle.vim
+cormacrelf/fuzzy-projectionist.vim
+cormacrelf/vim-colors-github
 ctrlpvim/ctrlp.vim
 davidoc/taskpaper.vim
 davidoc/todo.txt-vim
