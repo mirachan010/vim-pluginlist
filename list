@@ -4,6 +4,7 @@ airblade/vim-helptab
 airblade/vim-localorie
 airblade/vim-matchquote
 airblade/vim-rooter
+altercation/vim-colors-solarized
 autozimu/LanguageClient-neovim
 a/vim-snippets
 a/vim-trash-polka
