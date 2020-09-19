@@ -1,0 +1,26 @@
+# gal-vim
+
+Speking by Japanese gals!
+
+## Usage
+
+    :GalOn
+
+to start speaking Gal.
+
+    :GalOff
+
+to stop speaking Gal.
+
+## License
+
+This is based on Lingua::JA::Gal:
+
+http://search.cpan.org/dist/Lingua-JA-Gal
+
+Conversion table are generated from:
+
+http://ja.wikipedia.org/wiki/%E3%82%AE%E3%83%A3%E3%83%AB%E6%96%87%E5%AD%97
+
+So this plugin is provided under `same as perl` lincense.
+

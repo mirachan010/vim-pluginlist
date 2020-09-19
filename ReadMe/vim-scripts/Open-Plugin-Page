@@ -1,0 +1,34 @@
+# Open plugin page
+
+This plugin allows you to quick open plugin page on github by pressing only two keys.
+It is useful for exploring of examples of vimrc files. At this moment only 
+**vundle**-format of plugin specification is supported.
+
+
+## Use
+
+Put cursor on the line with plugin name, i.e. on the line like:
+
+    Plugin 'xvadim/open_plugin_page'
+
+and press <Leader>o (in the normal mode). The Github-page of plugin will be
+opened in your default web-browser.
+
+
+## Configuration
+
+You can change the manual-invocation mapping by adding this to your `.vimrc`:
+
+    map <Leader>foo <Plug>OpenPluginPage
+
+where `<Leader>foo` is the mapping you want.
+
+You can change the command for browser opening:
+
+    leg g:g:opp_open_command = "open"
+
+## Installation
+
+Copy the contents of archive into `~/.vim` or use **Vundle**:
+
+    Plugin 'xvadim/open_plugin_page'

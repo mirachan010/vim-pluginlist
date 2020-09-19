@@ -1,0 +1,43 @@
+# Vim script parsers
+
+[![Build Status](https://travis-ci.org/vim-jp/vim-vimlparser.svg?branch=master)](https://travis-ci.org/vim-jp/vim-vimlparser) [![codecov](https://codecov.io/gh/vim-jp/vim-vimlparser/branch/master/graph/badge.svg)](https://codecov.io/gh/vim-jp/vim-vimlparser)
+
+This is Vim script language ([a.k.a. VimL](#about-project-name)) parsers.
+
+## Features
+
+The parser to make AST (Abstract Syntax Tree)
+
+## Supported languages
+
+This parser provide same feature for following languages.
+
+* Vim script
+* Python
+* JavaScript 
+
+## Example
+
+All of interfaces are provided from vimlparser module. VimLParser parse into AST using StringReader, and Compiler to compile nodes.
+
+```vim
+let s:VP = vimlparser#import()
+let code = [
+\ 'let s:message = printf("hello %d", 1+(2*3))'
+\]
+let r = s:VP.StringReader.new(code)
+let p = s:VP.VimLParser.new()
+let c = s:VP.Compiler.new()
+echo join(c.compile(p.parse(r)), "\n")
+```
+
+This above code output following.
+
+```
+(let = s:message (printf "hello %d" (+ 1 (* 2 3))))
+```
+
+## About project name
+
+We know a name "VimL" is not the common short form of "Vim scripting language".
+But we choice "VimL" for historical and practical reasons and compatibility.

@@ -76,5 +76,7 @@ if [ -f ./list_new ];then
     git commit -m "add ${NAME}"
     git add ./CheckedFiles/$NAME.list
     git commit -m "new repos ${NAME}"
+    git add ./ReadMe/$NAME/.
+    git commit -m "new readme ${NAME}"
 fi
 echo finish

@@ -1,0 +1,37 @@
+VimSpeak
+========
+
+Introduction:
+-------------
+
+  interface to speak texts from vim using MSAgent.
+
+Installation:
+-------------
+
+    # cd /path/to/your/vim/bundle
+    # git clone https://github.com/mattn/vimspeak-vim
+
+Usage:
+------
+
+    :'<,'>VimSpeak
+
+  or
+
+    :VimSpeak foo
+
+License:
+--------
+
+BSD style license.
+
+Author:
+-------
+
+`Yasuhiro Matsumoto <mattn.jp@gmail.com>`
+
+Screenshot:
+-----------
+
+![](http://go-gyazo.appspot.com/87be1af7cd24cb25.png)

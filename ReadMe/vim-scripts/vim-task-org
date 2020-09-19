@@ -1,0 +1,39 @@
+## vim-task-org
+
+  Vim-task-org is a plugin for Vim to manipulate `TODO, FIXME` (and more) marks in your sources.
+
+## Documentation
+
+  See [doc/vto.txt](https://github.com/iflo0/vim-task-org/blob/master/doc/vto.txt). 
+  If you install vim-task-org, please run `:helptags {plugdir}/doc` to be able to view the documentation from within vim. 
+
+## Dependencies
+  
+  * Vim
+  * Ruby support for vim **(compatible with ruby 1.8 and ruby 1.9)**.
+
+## Installation
+
+  See [INSTALL.mkd](https://github.com/iflo0/vim-task-org/blob/master/INSTALL.mkd) for details.
+  
+## Usage
+  
+  Send vim the commands:
+
+  * `:Di` - date insert
+  * `:Ti` - task insert
+  * `:Vt` - view tasks
+  * `:Jt` - jump to task
+
+  Alternatively, bind to `:Di, :Ti, :Vt, :Jt` to a key binding:
+
+    map <leader>d :Di<CR>
+    map <leader>t :Ti<CR>
+    map <F5> :Vt<CR>
+    map <C-CR> :Jt<CR>
+
+## Bugs
+
+  Bugs are tracked through [The GitHub Issue Tracker](https://github.com/iflo0/vim-task-org/issues). 
+
+`09.09.11 16:55:34, use.skills@gmail.com`

@@ -1,0 +1,29 @@
+# bingtranslate.vim
+
+### Description
+  Translate text using Bing Translate API.
+
+### Usage
+    :BingTranslate
+  translate current line.
+
+    :'<,'>BingTranslate
+  translate text that blockwize visual.
+
+    :BingTranslate ja
+  translate current line to japanese.
+
+    :BingTranslate zh-cn ja
+  translate current line from chinese to japanese.
+
+    :BingTranslate zh-cn ja 谷歌翻译
+  translate '谷歌翻译' from chinese to japanese.
+
+    :Trans
+  alias for :BingTranslate
+
+### See Also
+  - :h v:lang
+
+### Author
+  * mattn

@@ -1,0 +1,37 @@
+plugins-update-vim
+==================
+
+The plugin updater for vim. don't depend on pathogen, bundle, vundle, or etc.
+
+Usage:
+------
+
+    :PluginsUpdate
+
+Screenshot:
+-----------
+
+![](http://mattn.github.com/plugins-update-vim/images/screenshot.png)
+
+Requirements:
+-------------
+
+You should have git or mercurial or subversion at least.
+
+Install:
+--------
+
+Of course, you should better to use git for this plugin.
+
+    cd ~/.vim/bundle
+    git clone https://github.com/mattn/plugins-update-vim
+
+License:
+--------
+
+BSD
+
+Author:
+-------
+
+> Yasuhiro Matsumoto `<mattn.jp@gmail.com>`

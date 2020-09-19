@@ -1,0 +1,28 @@
+ctrlp-rebuildfm
+===============
+
+CtrlP interface for rebuildfm
+
+![](http://go-gyazo.appspot.com/bd2d0826d451bf63.png)
+
+![](http://go-gyazo.appspot.com/e091f18c2f5a3169.png)
+
+Usage:
+------
+
+    :Rebuildfm
+
+Requirements:
+-------------
+
+* mplayer
+
+License:
+--------
+
+MIT
+
+Author:
+-------
+
+Yasuhiro Matsumoto (a.k.a mattn)

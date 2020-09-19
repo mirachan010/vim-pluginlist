@@ -1,0 +1,217 @@
+#Vim JavaScript Context Coloring
+
+##Description
+
+This is a plugin for the Vim text editor to highlight JavaScript code 
+according to its scope. This was inspired by an idea by Douglas Crockford
+in his [presentation](http://www.youtube.com/watch?v=dkZFtimgAcM) at YUIConf 2012.
+(See from around the 16 minute mark onwards.) 
+
+##Other implementations
+See [this discussion on Google Plus](https://plus.google.com/118095276221607585885/posts/FzKnHk96m2C)
+for information on other implementations.
+
+##Usage
+
+When the `JSContextColor` command is executed, the current buffer is colorized
+according to the scope of the code. By default this will happen when a JavaScript
+file is loaded, and whenever the file is changed. If you disable the plugin (see below),
+you could arrange to call the `JSContextColor` command in response to a keymap of
+your choice. Here is a summary of the commands available:
+
+##Commands
+
+    JSContextColor
+    JSContextColorToggle
+    JSContextColorUpdate
+
+##Global Variables
+
+    g:js_context_colors_enabled
+    g:js_context_colors
+    g:js_context_colors_insertmode
+    g:js_context_colors_usemaps
+    g:js_context_colors_colorize_comments
+    g:js_context_colors_comment_higroup
+    g:js_context_colors_debug
+    g:js_context_colors_highlight_function_names
+    g:js_context_colors_es5
+    g:js_context_colors_block_scope
+    g:js_context_colors_block_scope_with_let
+    g:js_context_colors_jsx
+    g:js_context_colors_fold
+    g:js_context_colors_folding
+
+##Requirements
+
+* The plugin relies on [NodeJS](http://nodejs.org/) being installed, preferably > 0.10.
+
+* UNIX-like environment. The command line script which runs jslint in Node to obtain the coloring data 
+requires a Unix-like environment to work. This means it's probably not going to work
+on Windows, unless inside Cygwin or something like that. 
+
+* Vim version: 7.4 recommended, however it also works now on 7.3. Untested on earlier versions. 
+
+##Installation
+
+### Using Pathogen.
+
+0. Install [Pathogen](https://github.com/tpope/vim-pathogen)
+
+1. Clone the repo from GitHub into your 'bundle' directory:
+
+    git clone git@github.com:bigfish/vim-js-context-coloring.git
+
+2. Run this command in the repo dir to install required node modules:
+
+    npm install
+
+3. Install docs (in Vim):
+
+    :Helptags
+
+### Using NeoBundle.
+
+0. Install [NeoBundle](https://github.com/Shougo/neobundle.vim#quick-start)
+
+1. Add the following to your `vimrc`:
+
+```VimL
+NeoBundle 'bigfish/vim-js-context-coloring', {
+  \ 'build' : {
+  \     'mac' : 'npm install --update',
+  \     'unix' : 'npm install --update',
+  \    },
+  \ }
+```
+
+2. Close & re-open Vim.
+
+##Configuration
+
+By default the plugin is enabled for all .js files. The highlighting will be applied
+whenever a change is made to the text, whether in Normal or Insert mode. Note that it
+will only be done *after* Insert mode is exited (back to Normal mode) so it will not 
+update as you type.
+
+###Colors
+
+The default colors for JavaScript scope levels are:
+
+1:white, 2:green, 3: yellow 4:blue, 5:red, 6:cyan, 7:grey.
+
+The highlighting is now handled by a colorscheme file, in standard vim colorscheme format.
+If you're upgrading from a previous version of the plugin (<= 0.6), you will need to 
+reconfigure your colors by copying the 'jscc_colors.vim' colorscheme file from the
+plugin's /colors directory, to your VIMRUNTIME/colors directory (create if necessary). 
+On unix this will be ~/.vim/colors.  Make sure the name is still the same.
+Then you can make modifications to the highlight groups in the file as you wish.
+See ':help highlight-args' or look at other colorschemes for guidance. 
+You may add additional levels if you wish. 
+
+The special syntax group 'JSCC_UndeclaredGlobal' targets undeclared global
+variables, in order to distinguish them from global variables which were
+declared in the current file. If you don't want to distinguish these, just set
+this group to the same highlighting as JSCC_Level_0.
+
+You may use the [XtermColorTable](http://www.vim.org/scripts/script.php?script_id=3412) plugin to see what colors are available
+
+Note that the color changes will not take effect immediately. To update the colors, you
+can use the `:JSContextColorUpdate` command.
+
+###256 Color Support
+
+####Linux
+
+Ubuntu (and I suspect most modern distros?) do support 256 colors by default, but Vim does not know this
+as the $TERM environment is set to 'xterm' by default and Vim does not think that the terminal can support 
+256 colors and does not even try. This can be remedied by adding the following line to your .bashrc:
+
+   [ -z "$TMUX" ] && export TERM=xterm-256color
+
+This will set the $TERM environment variable to `xterm-256colr` unless we are using tmux (which sets its own $TERM value and should allow the plugin to work).
+
+####Mac OS X
+
+Terminal.app does not support 256 colors in Snow Leopard and older. If you have Snow Leopard you can use iTerm2
+ to enable 256 color support. If you have a newer OSX you should be OK but the $TERM variable must still be 
+ set to 'xterm-256color'. Apparently this is default in Lion, and more recent versions, so that it should just work.
+
+###Comments
+
+By default, comments are not colorized, but set to a middle grey color. If
+you want to colorize comments as well, do this:
+
+	let g:js_context_colors_colorize_comments = 1
+
+If you want to use a custom highlight group for comments, define the group,
+and then assign it to the `g:js_context_colors_comment_higroup`, eg:
+
+	highlight MyComment ctermfg=red
+	let g:js_context_colors_comment_higroup = 'MyComment'
+
+Or to use the comment syntax highlighting from your colorscheme:
+
+	let g:js_context_colors_comment_higroup = 'Comment'
+
+This will only take effect if the `g:js_context_colors_colorize_comments` option
+is not set to 1.
+
+### Highlighting Function names
+
+Setting the `g:js_context_colors_highlight_function_names` option to 1 will
+highlight declared function names with the parent scope level color, to
+indicate that the name was exported to the container scope. 
+
+###ES6 Support
+
+The plugin now supports ES6 code. Arrow functions will be highlighted.
+If you also want to highlight block scopes, you can set the `g:js_context_colors_block_scope`
+option, but be aware this will also affect ES3/5 code if you open it. So you can 
+use the `g:js_context_colors_block_scope_with_let` option, to only highlight
+blocks with let variables.
+
+##ES5 only mode
+
+If you only want to support ES5 syntax, you can set the `g:js_context_colors_es5` option
+
+### JSX support
+ 
+Set the `g:js_context_colors_jsx` option to 1 to support JSX (and ES6). If the file extension
+is .jsx this will be automatically turned on.
+
+### Folding
+
+The foldmethod is set to syntax by default, so if you do 'zc' to close the current fold,
+it will fold the current function. ('zo' opens it again). If `g:js_context_colors_block_scope`
+is set, it will fold the current block. There is another option to automatically fold functions
+after a certain depth of nesting, which is 9 by default. The option that controls this is
+`g:js_context_colors_foldlevel`. Set to a lower number to fold sooner, or a higher to avoid folding 
+if you don't want auto folding. To not set foldmethod to syntax, and disable autofolding,
+set the `g:js_context_colors_foldlevel` to 0.
+
+###Error Message
+When the plugin fails to get a valid response from the parser script, it
+will show an error... it will also not highlight. This is most likely a syntax error,
+but it could also be a problem with the CLI script (perhaps it was not installed).
+To stop annoying users, however it is now suppressed by default.
+
+But it can be re-enabled with this option:
+
+	let g:js_context_colors_show_error_message = 1
+
+###Disabling
+
+The plugin is enabled by default. To disable it, set the `g:js_context_colors_enabled` variable
+to 0, in your .vimrc file.
+
+###Mappings
+
+By default, <localleader>h is mapped to the `JSContextColor` command.
+By default, <localleader>t is mapped to the `JSContextColorToggle` command.
+
+These are local to the buffer. They can be disabled by setting the `g:js_context_colors_usemaps` variable to 0.
+
+##License
+
+MIT -- see LICENSE file

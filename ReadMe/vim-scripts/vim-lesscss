@@ -1,0 +1,72 @@
+Vim Lesscss
+===========
+
+Vim plugin that make it easy to edit less files without need to manually update
+corresponding css file.
+
+**Note**. For projects which have a complex structure automate this task with [any of](http://gruntjs.com/)
+[existing](http://gulpjs.com/) [task](http://mrbook.org/tutorials/make/) [runners](http://fabric.readthedocs.org/) (personally I prefer combination of [Grunt less](https://github.com/gruntjs/grunt-contrib-less)
+and [Grunt watch](https://github.com/gruntjs/grunt-contrib-watch)).
+
+Installation
+------------
+
+If your don't have a preferred way to install Vim plugins, try to use
+[pathogen](https://github.com/tpope/vim-pathogen) and then run:
+
+```bash
+cd ~/.vim/bundle
+git clone git://github.com/vitalk/vim-lesscss.git
+```
+
+To install via [Vundle](https://github.com/gmarik/Vundle.vim) add to your
+`.vimrc`:
+
+```viml
+" Compiles your less files on the fly
+Bundle 'vitalk/vim-lesscss'
+```
+
+Walkthrough
+-----------
+
+This is a partial tutorial, see `:help lesscss` for more details.
+
+Change this to the location of `lessc` on your system, or define some additional
+arguments when `lessc` is called:
+
+```viml
+" less to css executable (full path or simple executable)
+let g:lesscss_cmd = '$(which lessc)'
+```
+
+Just open your `less` file in Vim and edit it. On save corresponding `css` file
+will be created with the same name as original. If your want to save the output
+`css` files anywhere else add to your `vimrc`:
+
+```viml
+" save css files to separate css folder (relative to original less location)
+let g:lesscss_save_to = '../css/'
+```
+
+To toggle plugin just use the default key binding `<Leader>l` or remap it to
+something nice.
+
+```viml
+" remap plugin toggle
+let g:lesscss_toggle_key = '<Leader>.'
+```
+
+Or disable it by default
+
+```viml
+" disable plugin at startup
+let g:lesscss_on = 0
+```
+
+License
+-------
+
+Copyright © Vital Kudzelka <vital.kudzelka@gmail.com>.
+
+Distributed under the same terms as Vim itself. See `:help license` for details.
