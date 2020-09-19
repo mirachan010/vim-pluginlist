@@ -15,29 +15,31 @@ do
     esac
     shift
 done
-touch ./$NAME.list
+touch ./${NAME}.list
 if [ $USER -eq 1 ];then
     echo download repositories list
-    my-repositories $NAME > ./$NAME.list
+    my-repositories ${NAME} > ./${NAME}.list
     echo downloaded repositories list
 fi
 if [ $ORG -eq 1 ];then
+    echo What your GitHubID?
+    read USER
     echo download repositories list
-    curl -u mirachan010 "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">>${NAME}_1
+    curl -u ${USER} "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">>${NAME}_1
     echo downloaded repositories list
     cat ${NAME}_1|jq -r .[].name >> ./${NAME}.list
     echo `cat ${NAME}.list|wc -l`
     rm ${NAME}_1
 fi
-touch ./CheckedFiles/$NAME.list
-comm <(sort ./$NAME.list) <(sort ./CheckedFiles/$NAME.list) -23 > ./check.list
-rm ./$NAME.list
+touch ./CheckedFiles/${NAME}.list
+comm <(sort ./${NAME}.list) <(sort ./CheckedFiles/${NAME}.list) -23 > ./check.list
+rm ./${NAME}.list
 Max=`cat ./check.list |wc -l`
 COUNT=0
 VCOUNT=0
 COLOR=0
-if [ ! -d ./ReadMe/$NAME ]; then
-    mkdir ./ReadMe/$NAME
+if [ ! -d ./ReadMe/${NAME} ]; then
+    mkdir ./ReadMe/${NAME}
 fi
 while read line
 do
@@ -52,13 +54,13 @@ do
         VCOUNT=$(( VCOUNT + 1 ))
         COLOR=0
         if [ -e ./$line/README.md ];then
-            cp ./$line/README.md ./ReadMe/$NAME/$line
+            cp ./$line/README.md ./ReadMe/${NAME}/$line
         elif [ -e ./$line/README.mkd ]; then
-            cp ./$line/README.mkd ./ReadMe/$NAME/$line
+            cp ./$line/README.mkd ./ReadMe/${NAME}/$line
         fi
-        touch ./ReadMe/$NAME/$line
+        touch ./ReadMe/${NAME}/$line
     fi
-    echo $line >> ./CheckedFiles/$NAME.list
+    echo $line >> ./CheckedFiles/${NAME}.list
     COUNT=$(( COUNT + 1 ))
     echo $COUNT/$Max -- $VCOUNT
     rm -rf ./$line &
@@ -74,9 +76,9 @@ if [ -f ./list_new ];then
     sort -u ./CheckedFiles/${NAME}.list -o ./CheckedFiles/${NAME}.list
     git add ./list
     git commit -m "add ${NAME}"
-    git add ./CheckedFiles/$NAME.list
+    git add ./CheckedFiles/${NAME}.list
     git commit -m "new repos ${NAME}"
-    git add ./ReadMe/$NAME/.
+    git add ./ReadMe/${NAME}/.
     git commit -m "new readme ${NAME}"
 fi
 echo finish
