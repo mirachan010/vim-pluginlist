@@ -28,7 +28,6 @@ if [ $ORG -eq 1 ];then
     curl -u ${USER} "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">>${NAME}_1
     echo downloaded repositories list
     cat ${NAME}_1|jq -r .[].name >> ./${NAME}.list
-    echo `cat ${NAME}.list|wc -l`
     rm ${NAME}_1
 fi
 touch ./CheckedFiles/${NAME}.list
