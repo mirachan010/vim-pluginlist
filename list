@@ -511,6 +511,10 @@ neoclide/vim-easygit
 neoclide/vim-hug-neovim-rpc
 neoclide/vim-node-rpc
 neoclide/vim-prettier
+neovim/node-host
+neovim/nvimdev.nvim
+neovim/nvim-lspconfig
+neovim/nvim.net
 nightsense/carbonized
 nightsense/cosmic_latte
 nightsense/forgotten
