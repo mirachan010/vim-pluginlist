@@ -515,6 +515,7 @@ neovim/node-host
 neovim/nvimdev.nvim
 neovim/nvim-lspconfig
 neovim/nvim.net
+nicolasacquaviva/vim-snipper
 nightsense/carbonized
 nightsense/cosmic_latte
 nightsense/forgotten
