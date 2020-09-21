@@ -48,7 +48,7 @@ do
     else
         COLOR=0
     fi
-    if [ -d ./$line/autoload -o -d ./$line/plugin -o $COLOR -eq 1 ];then
+    if [ -d ./$line/autoload -o -d ./$line/plugin -o $COLOR -eq 1 -o -d ./$line/rplugin/python3/denite/source ];then
         echo ${NAME}/$line >> list_new
         VCOUNT=$(( VCOUNT + 1 ))
         COLOR=0
