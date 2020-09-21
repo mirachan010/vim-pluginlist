@@ -97,6 +97,8 @@ itchyny/vim-winfix
 Jagua/vim-altr_popup
 Jagua/vim-autoinput
 Jagua/vim-ctrlp-altr
+Jagua/vim-denite-altr
+Jagua/vim-denite-ghq
 Jagua/vim-dev_go2go
 Jagua/vim-foldtexts
 Jagua/vim-iskp
