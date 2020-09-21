@@ -1,0 +1,46 @@
+# unite-neobundle-vimrc
+
+unite-neobundle-vimrc is a Unite source for vim.
+
+This plugin nominates lines of [NeoBundle](https://github.com/Shougo/neobundle.vim) procedures in your .vimrc as candidates.
+
+
+
+## Installation
+
+If you use NeoBundle, you write the following settings to your .vimrc.
+
+```vim
+        NeoBundleLazy 'Jagua/vim-unite-neobundle-vimrc', {
+        \             'unite_sources' : 'neobundle/vimrc',
+        \ }
+        let g:unite_neobundle_vimrc_path = expand('<sfile>')
+```
+
+
+## Usage
+
+
+```vim
+Unite neobundle/vimrc
+```
+
+
+unite lists lines matched `NeoBundle` or `neobundle#bundle` in your .vimrc.
+
+
+Typing `;t` at unite prompt, unite lists lines matched `neobundle#tap` instead of above.
+
+
+
+## Variables
+
+
+**`g:unite_neobundle_vimrc_path`** specifies the path to your `.vimrc` (ceartainly written some procedures such as `NeoBundle` and `neobundle#tap`).
+
+
+If `g:unite_neobundle_vimrc_path` is not defined, then unite-neobundle-vimrc uses `$MYVIMRC`.
+
+
+**`g:unite_neobundle_vimrc_tap_key`** defines keys instead of above `;t`.
+

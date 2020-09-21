@@ -1,0 +1,42 @@
+
+# unite-thscores
+
+unite-thscores is a Unite source for Vim.
+
+This plugin depends on vital.vim and my Yahoo pipe(s).
+
+
+## Installation
+
+If you use NeoBundle, you write the following settings to your .vimrc.
+
+```vim
+        NeoBundleLazy 'Jagua/vim-unite-thscores', {
+        \             'depends' : ['vim-jp/vital.vim'],
+        \             'unite_sources' : 'thscores',
+        \ }
+```
+
+
+### Advanced settings
+
+
+```vim
+        NeoBundleLazy 'Jagua/vim-unite-thscores', {
+        \             'depends' : ['vim-jp/vital.vim', 'Shougo/vimproc'],
+        \             'unite_sources' : 'thscores',
+        \ }
+        if neobundle#tap('vim-unite-thscores') "{{{
+          nnoremap ,ths :<C-u>Unite thscores -profile-name=source/thscores -keep-focus -no-quit -start-insert<CR>
+          nnoremap ,thv :<C-u>Unite thscores -profile-name=source/thscores -keep-focus -no-quit -auto-preview<CR>
+          function! neobundle#tapped.hooks.on_source(bundle)
+            let g:thscores#system_function = 'vimproc#system'
+          endfunction
+          function! neobundle#tapped.hooks.on_post_source(bundle)
+            call unite#custom#source('thscores', 'matchers', 'matcher_migemo')
+          endfunction
+          call neobundle#untap()
+        endif "}}}
+```
+
+
