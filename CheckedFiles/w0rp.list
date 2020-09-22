@@ -1,5 +1,6 @@
-ale-example-project
 AndroidUtils
+OpenForecast
+ale-example-project
 conan-conquering-calculator
 conan-conquering-calculator-demo
 dgeo
@@ -20,10 +21,9 @@ mindwar
 ms-maps
 new-dlang.org
 no-circular-import-index-error
-OpenForecast
 pebble-druntime
-python_tools
 python-to-typescript
+python_tools
 random_internet
 report-alchemy
 riptube

@@ -1,3 +1,5 @@
+KeepLearning
+Python-2.7.8
 af-magic-left
 apue.3e
 bash-utils
@@ -7,11 +9,10 @@ cmdcheatsheet
 config
 dataformat
 echo
-flask_dir_gen
 flask-qrcode-demo
+flask_dir_gen
 gallery
 http_json_logger
-KeepLearning
 k-tmux
 k-vim
 k-vim-vscode
@@ -20,7 +21,6 @@ linux-notes
 logging-go
 offline
 py-patterns
-Python-2.7.8
 pytools
 pyutils
 rabbitmq-http-dispatcher
