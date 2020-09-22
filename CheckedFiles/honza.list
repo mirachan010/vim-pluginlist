@@ -1,5 +1,9 @@
 140medley
 1689
+CoffeeTodo
+MdChrome
+Posterous-App-Engine
+ResourceBibleStudy
 ajax.js
 amara-chrome
 anosql
@@ -16,7 +20,6 @@ chaperone
 clitwi
 clj-gpx
 cljs-node
-CoffeeTodo
 contextualsdk
 cs-todo
 django-chef
@@ -36,8 +39,8 @@ gif-maker
 gitutils
 gopro-tools
 grab-free-machine
-greekapp
 greek-new-testament
+greekapp
 heroku-bouncer
 heroku-sprunge
 hilltopfm
@@ -53,7 +56,6 @@ kindle-highlight-parser
 lenscap
 license.js
 magit-gerrit-plus
-MdChrome
 merge-upstream
 mutt-notmuch-py
 nathan-university
@@ -68,7 +70,6 @@ pannote
 papers
 photolab.coffee
 photolab.py
-Posterous-App-Engine
 punctuation
 pygmented-markdown
 pypass
@@ -80,7 +81,6 @@ redish
 rembrant
 renaissance.css
 renodiff
-ResourceBibleStudy
 riddle
 roguelike-chess
 saints-security
@@ -96,9 +96,9 @@ testrepo
 textual-criticism-game
 todo.js
 trumpett
-vim2pygments
-vim.io
 vim-snippets
+vim.io
+vim2pygments
 vote
 web-development
 westminster-reference-bible

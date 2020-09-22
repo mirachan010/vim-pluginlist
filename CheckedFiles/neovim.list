@@ -1,3 +1,4 @@
+VSNvim
 bot-ci
 deps
 doc
@@ -8,15 +9,14 @@ libuv
 libvterm
 lua-client
 neovim
-neovim.github.io
 neovim-ruby
 neovim-snap
+neovim.github.io
 node-client
 node-host
-nvimdev.nvim
 nvim-lspconfig
 nvim.net
+nvimdev.nvim
 pynvim
 python-gui
 unibilium
-VSNvim
