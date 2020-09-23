@@ -1,5 +1,5 @@
-# Many vim plugins
-[�ɂق�](./README_ja.md)  
+# vim-pluginlist
+[にほんご](./README_ja.md)  
 Plugins list for vim  
 And you can make toml files for Shougo/dein.vim  
 
