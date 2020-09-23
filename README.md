@@ -1,4 +1,4 @@
-# Many vim plugins
+# vim-pluginlist
 [にほんご](./README_ja.md)
 
 ![](https://i.imgur.com/dNyZLlQ.png)  
