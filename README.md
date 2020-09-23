@@ -1,5 +1,5 @@
 # Many vim plugins
-[�ɂق�](./README_ja.md)
+[にほんご](./README_ja.md)
 
 ![](https://i.imgur.com/dNyZLlQ.png)  
 
