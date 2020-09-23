@@ -1,21 +1,26 @@
-# 見かけてプラグインをどんどんリストかしていくもの
+# Many vim plugins
+[にほんご](./README_ja.md)
 
-どんどん追加していくつもり  
+![](https://i.imgur.com/dNyZLlQ.png)  
 
-## ファイル構成
-+ CheckedFiles/\*.list
-いままでに確認した人間のリポジトリ
+Plugins list for vim
+And you can make toml files for Shougo/dein.vim
 
-+ ./list
-vim-pluginsのリスト本体
+## How to use
+```bash
+git clone https://github.com/mirachan010/vim-pluginlist
+cd vim-pluginlist
+bash ./MakeInstallListForDein.sh
+```
 
+## files
 + ./MakeInstallListForDein.sh
-ReadMe/にはいってるプラグインのリストをfzfで選択しながらlist.tomlってファイルに出力してくれるやつ
-fzfが必要です
+Make list.toml by your select plugins
+Need fzf
 
 + ./ReadGitHub.sh
-プラグインをどんどん追加してくれるシェルスクリプト
-my-repositoriesが必要です。
+Make pluginlist script
+Need mattn/my-repositories
 
 ```
 ./ReadGitHub.sh -u user
