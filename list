@@ -55,6 +55,8 @@ godlygeek/netlib
 godlygeek/tabular
 godlygeek/vim-files
 godlygeek/windowlayout
+gyim/dotvim
+gyim/vim-boxdraw
 honza/dockerfile.vim
 honza/vim-snippets
 honza/writer.vim
