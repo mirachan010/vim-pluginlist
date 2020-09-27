@@ -718,9 +718,11 @@ skywind3000/asyncrun.vim
 skywind3000/asynctasks.vim
 skywind3000/gutentags_plus
 skywind3000/quickmenu.vim
+skywind3000/vim
 skywind3000/vim-auto-popmenu
 skywind3000/vim-cppman
 skywind3000/vim-dict
+skywind3000/vim-init
 skywind3000/vim-keysound
 skywind3000/vim-preview
 skywind3000/vim-quickui
