@@ -266,6 +266,8 @@ lambdalisue/vital-Vim-Validate
 lambdalisue/vital-Web-API-GitHub
 lambdalisue/vital-Whisky
 lambdalisue/wifi.vim
+l-tchen/auto-dark-mode.vim
+l-tchen/vim-dark-mode-switcher
 machakann/asyncomplete-ezfilter.vim
 machakann/asyncomplete-unicodesymbol.vim
 machakann/vim-colorscheme-imas
