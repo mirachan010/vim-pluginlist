@@ -501,6 +501,7 @@ mattn/yamada2-vim
 mattn/yamada-vim
 mattn/yapc-asia-timetable-viewer-vim
 mattn/zencoding-vim
+mirachan010/vim-denite-plugins
 natebosch/vim-lsc
 natebosch/vim-lsc-dart
 ncm2/float-preview.nvim
