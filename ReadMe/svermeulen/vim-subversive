@@ -1,0 +1,157 @@
+
+# Subversive.vim
+
+Subversive provides two new operator motions to make it very easy to perform quick substitutions.  It contains no default mappings and will have no effect until you add your own maps to it.
+
+Also see [here](https://www.youtube.com/watch?v=crxHxqzXMzw) if you prefer watching a video explanation of this plugin instead of the below text.
+
+## Substitute Motion
+
+Example config:
+
+```viml
+" s for substitute
+nmap s <plug>(SubversiveSubstitute)
+nmap ss <plug>(SubversiveSubstituteLine)
+nmap S <plug>(SubversiveSubstituteToEndOfLine)
+```
+
+Note that in this case you will be shadowing the change character key `s` so you will have to use the longer form `cl`
+
+After adding these maps, you can then execute `s<motion>` to substitute the text object provided by the motion with the contents of the default register (or an explicit register if provided).  For example, you could execute `siw` to replace the current word under the cursor with the current yank, or `sip` to replace the paragraph, etc.
+
+## Substitute Over Range Motion
+
+Another interesting operator provided by subversive allows specifying both the text to replace and the line range over which to apply the change by using multiple consecutive motions.
+
+Example config:
+
+```viml
+nmap <leader>s <plug>(SubversiveSubstituteRange)
+xmap <leader>s <plug>(SubversiveSubstituteRange)
+
+nmap <leader>ss <plug>(SubversiveSubstituteWordRange)
+```
+
+After adding this map, if you execute `<leader>s<motion1><motion2>` then enter some text into a prompt in the status bar, then the text given by `motion1` should be replaced by the text we entered in the prompt for each line provided by `motion2`.  Alternatively, we can also select `motion1` in visual mode and then hit `<leader>s<motion2>` for the same effect.
+
+This can be very powerful. For example, you could execute `<leader>siwip` to replace all instances of the current word under the cursor that exist within the paragraph under the cursor.  Or `<leader>sl_` to replace all instances of the character under the cursor on the current line.
+
+The `<leader>ss` mapping is used as a shortcut to replace the current word under the cursor.  This allows you for example to execute `<leader>ssip` to replace the word under cursor in the current paragraph.  Note that this matches **complete** words so is different from `<leader>siwip` (which will not require that there be word boundaries on each match)
+
+Let's see it in action:
+
+![Substitute Over Range Example](https://i.imgur.com/0qh2sOU.gif)
+
+In this gif, we first rename the local `foo` parameter by executing `<leader>ssom` then entering `bar` in the prompt (note that `om` is a custom motion that stands for 'outer c# method' and is not provided by this plugin).  Also note that because we are using `<leader>ss`, the text `_foos` is unaffected because it does not match the complete word.  It is useful in this case because we only want to rename the parameter within the function.
+
+After that we switch to visual mode and select the `foo` part `_foos` then execute `<leader>sie` and once again enter `bar` into the prompt.  `ie` is again a custom motion that stands for `entire buffer` (see next section for details)
+
+After that we move to the `Foo` part of `AddFoo` and execute `<leader>seie` and once again enter `Bar`.  Then finally do the same for the fully capitalized `FOOS`.
+
+Note that if you are using neovim you can enable the `inccommand` option to get a real time preview of the replacement as you're typing it (equivalent to setting `g:subversivePromptWithActualCommand` to `1`)
+
+Note also that this motion is repeatable.  If you run `<leader>siwip` in one paragraph, then go to a different paragraph, then hit `.` then the same substitution will apply to the new paragraph under the cursor.
+
+### Custom Text Objects
+
+Note that to really take advantage of these mappings, it is helpful to add custom text objects in addition to just the built-in ones like current paragraph (`ip`), current sentence (`is`), or current line (`_`).  Custom text objects such as current indent level, current method, current class, entire buffer, current scroll page, etc. can all help a lot here.
+
+For example, a couple really simple motions that are useful for subversive are:
+
+```viml
+" ie = inner entire buffer
+onoremap ie :exec "normal! ggVG"<cr>
+
+" iv = current viewable text in the buffer
+onoremap iv :exec "normal! HVL"<cr>
+```
+
+There are also other plugins that provide lots of custom text objects that I would recommend taking a look at.
+
+### Confirming Each Substitution
+
+For many substitutions, you can rely on the highlight preview to understand what is being replaced. But if you are doing a larger replacement across the entire file you might want to confirm each one.  You can do this with the following maps:
+
+```viml
+nmap <leader>cs <plug>(SubversiveSubstituteRangeConfirm)
+xmap <leader>cs <plug>(SubversiveSubstituteRangeConfirm)
+nmap <leader>css <plug>(SubversiveSubstituteWordRangeConfirm)
+```
+
+These work the same as the `<leader>s` maps above except will step through each replacement one by one.
+
+## Questions
+
+* #### What if I don't want to use the prompt and want to directly replace with a register value?
+
+    If you provide an explicit register to any of the substitute motions above it will not prompt and instead will use the contents of the given register.  For example, `"a<leader>siwip` will immediately replace all instances of the current word under the cursor with the contents of register `a` that exist within the current paragraph.
+
+    If this isn't enough, you can also use the following plugs instead:
+
+    ```viml
+    nmap <leader>s <plug>(SubversiveSubstituteRangeNoPrompt)
+    xmap <leader>s <plug>(SubversiveSubstituteRangeNoPrompt)
+
+    nmap <leader>ss <plug>(SubversiveSubstituteWordRangeNoPrompt)
+    ```
+
+    Which will work identically to the previous plugs except instead of prompting it will use the default register.
+
+* #### What if I just want to delete instead of replace?
+
+    You can do this by passing the black hole register to one of the substitute over range commands. For example: `"_<leader>siwip` or `"_<leader>csiwip` if you want to confirm each delete.
+
+    Unfortunately you cannot just input an empty value into the prompt because there isn't a way to distinguish this input from cancelling via escape (unless you set `g:subversivePromptWithActualCommand` to `1` in which case that will work fine)
+
+## Settings
+
+* `g:subversivePromptWithCurrent` - When set to `1`, the prompt will include the text that is being replaced.  This can be useful if you want to just make an edit to it.  Default: `0`
+* `g:subversiveCurrentTextRegister` - When set, the given register will be populated with the text that is being replaced.  This can be useful as an alternative to `g:subversivePromptWithCurrent`, so that you can hit `<c-r>r` in the prompt (assuming you set it to `'r'`) when you want to edit it and otherwise just directly type when you want to do a full replace.
+* `g:subversivePromptWithActualCommand` - When set to `1`, instead of only prompting for the replacement text, it will prompt with the native vim substitute command.  Veteran vim users might prefer this so that they can adjust the various substitution flags themselves.  Default: `0`
+* `g:subversivePreserveCursorPosition` - When set to `1`, the cursor will not move when substitutions are applied.  Default is `0` to match normal vim behaviour.
+
+## Integration with abolish.vim
+
+If you have also installed [vim-abolish](https://github.com/tpope/vim-abolish), then you might consider adding something similar to the following mapping as well:
+
+```viml
+nmap <leader><leader>s <plug>(SubversiveSubvertRange)
+xmap <leader><leader>s <plug>(SubversiveSubvertRange)
+
+nmap <leader><leader>ss <plug>(SubversiveSubvertWordRange)
+```
+
+This will behave the same as `<leader>s` except that it will perform an abolish 'subvert' instead of using vim's built in substitute command.  This will apply the substitution and also preserve whatever case the original word has.  For example:
+
+![Abolish Example](https://i.imgur.com/qMfYjBD.gif)
+
+In this case, we move the cursor overtop `foo` and then execute `<leader><leader>seie` then enter `bar`, which replaces all instances of `foo` regardless of case.
+
+This can be a very convenient way to perform quick renames.
+
+As you would expect, the `<leader><leader>ss` mapping works similarly except only matches complete words that include word boundaries.
+
+And once again there are also alternative plugs that will use default register instead of a prompt if you prefer that:
+
+```viml
+nmap <leader><leader>s <plug>(SubversiveSubvertRangeNoPrompt)
+xmap <leader><leader>s <plug>(SubversiveSubvertRangeNoPrompt)
+
+nmap <leader><leader>ss <plug>(SubversiveSubvertWordRangeNoPrompt)
+```
+
+### Integration with yoink
+
+Note that if you install [vim-yoink](https://github.com/svermeulen/vim-yoink) alongside vim-subversive, then the post-paste yoink swapping feature will automatically work with subversive (single motion) substitutions as well.  In other words, assuming the default mappings, you can execute `siw` then hit `<c-n>` / `<c-p>` to swap between different yanks from the yoink history.
+
+Subversive also provides a plug to replace visual mode paste to provide post paste swapping there as well:
+
+```viml
+xmap s <plug>(SubversiveSubstitute)
+xmap p <plug>(SubversiveSubstitute)
+xmap P <plug>(SubversiveSubstitute)
+```
+
+Now if you hit `p` while in visual mode you can swap between yanks just like when pasting in normal mode.
+
