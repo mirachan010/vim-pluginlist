@@ -383,6 +383,7 @@ mattn/livestyle-vim
 mattn/lleval-vim
 mattn/mahjong-vim
 mattn/marquee-vim
+mattn/memcachedclient
 mattn/mkdpreview-vim
 mattn/msgpack-vim
 mattn/multi-vim
