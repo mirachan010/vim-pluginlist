@@ -1,4 +1,3 @@
-.vim
 AI
 c-study
 dotfiles
@@ -7,6 +6,8 @@ mirachan010
 poemu
 set
 study
+.vim
+vim-denite-plugins
 vim-pluginlist
-web-setting
 webapp
+web-setting
