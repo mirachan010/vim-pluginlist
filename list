@@ -162,6 +162,17 @@ justinmk/vim-dirvish
 justinmk/vim-gtfo
 justinmk/vim-sneak
 justinmk/vim-syntax-extra
+kristijanhusak/defx-icons
+kristijanhusak/vim-carbon-now-sh
+kristijanhusak/vim-create-pr
+kristijanhusak/vim-dadbod-completion
+kristijanhusak/vim-dadbod-ui
+kristijanhusak/vim-dirvish-git
+kristijanhusak/vim-hybrid-material
+kristijanhusak/vim-js-file-import
+kristijanhusak/vim-packager
+kristijanhusak/vim-project-lint
+kristijanhusak/vim-simple-notifications
 lambdalisue/attorney.vim
 lambdalisue/battery.vim
 lambdalisue/cactus.vim
