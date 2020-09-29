@@ -73,6 +73,7 @@ ctrlp-jazzradio
 ctrlp-kaomoji
 ctrlp-launcher
 ctrlp-mark
+ctrlp-matchfuzzy
 ctrlp-mcdonald
 ctrlp-mpc
 ctrlp-rebuildfm
@@ -118,6 +119,7 @@ embulk-plugin-vim
 emmet-vim
 emoji-vim
 encore-cmd
+entgo-bbs
 entgo-example
 eonet
 equalser
@@ -1439,6 +1441,7 @@ shellwrap
 shinchoku-doudesuka
 simpletap.vim
 sinatter
+siritori
 siritori-bot
 sj-example
 skkdict.vim
@@ -1528,6 +1531,7 @@ ustplayer
 utf8run
 vagrant-centos65-x86_64-gitolite
 vdbi-vim
+vim9script-logistic-regression-iris
 vim-airline-hahhah
 vim-airline-weather
 vim-ale-icons
@@ -1585,6 +1589,8 @@ vim-metarw-gdrive
 vim-metarw-redmine
 vim-metarw-simplenote
 vim-metarw-webdav
+vim-molder
+vim-molder-operations
 vim-mynumber
 vim-nekokak
 vim-nyancat
@@ -1676,4 +1682,5 @@ yet-not-reading-vimrc
 yomikata
 yql-query
 zencoding-vim
+zenn-contents
 zinc-launcher
