@@ -924,6 +924,15 @@ tpope/vim-surround
 tpope/vim-tbone
 tpope/vim-unimpaired
 tpope/vim-vinegar
+tsuyoshicho/codic-web.vim
+tsuyoshicho/StatuslineUpdateTimer.vim
+tsuyoshicho/transparency.vim
+tsuyoshicho/vim-efm-langserver-settings
+tsuyoshicho/vim-fg
+tsuyoshicho/vim-pass
+tsuyoshicho/vital-Builder
+tsuyoshicho/vital-codec
+tsuyoshicho/vital-globe
 tyru/autochmodx.vim
 tyru/autocmd-tabclose.vim
 tyru/banban.vim
