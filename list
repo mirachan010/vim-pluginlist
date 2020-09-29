@@ -332,6 +332,7 @@ mattn/ctrlp-jazzradio
 mattn/ctrlp-kaomoji
 mattn/ctrlp-launcher
 mattn/ctrlp-mark
+mattn/ctrlp-matchfuzzy
 mattn/ctrlp-mcdonald
 mattn/ctrlp-mpc
 mattn/ctrlp-rebuildfm
@@ -465,6 +466,8 @@ mattn/vim-metarw-gdrive
 mattn/vim-metarw-redmine
 mattn/vim-metarw-simplenote
 mattn/vim-metarw-webdav
+mattn/vim-molder
+mattn/vim-molder-operations
 mattn/vim-mynumber
 mattn/vim-nekokak
 mattn/vim-nyancat
