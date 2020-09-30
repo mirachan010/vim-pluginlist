@@ -4608,6 +4608,7 @@ w0rp/jasmine-test-runner
 w0rp/python_tools
 w0rp/vim
 w0rp/vim-speech
+wfxr/minimap.vim
 wklken/k-vim
 ycm-core/neomake
 ycm-core/YouCompleteMe
