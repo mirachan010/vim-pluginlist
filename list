@@ -744,6 +744,14 @@ skywind3000/vim-preview
 skywind3000/vim-quickui
 skywind3000/vim-terminal-help
 skywind3000/yamlvim
+statox/betterTabs.vim
+statox/colorscheme-changer.vim
+statox/FYT.vim
+statox/GOD.vim
+statox/gutterline.vim
+statox/messUp.vim
+statox/vim-compare-lines
+statox/VimRegexConverter
 svermeulen/ncm2-yoink
 svermeulen/nvim-marksman
 svermeulen/nvim-moonmaker
