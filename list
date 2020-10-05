@@ -57,6 +57,7 @@ godlygeek/vim-files
 godlygeek/windowlayout
 gyim/dotvim
 gyim/vim-boxdraw
+hashue/greeting-vim-plugin
 haya14busa/dein-command.vim
 haya14busa/eew.vim
 haya14busa/endtagcomment.vim
