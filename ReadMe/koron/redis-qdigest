@@ -1,0 +1,24 @@
+# QDigest implementation for Redis+Lua
+
+QDigest is quantile estimator.  It is introduced in [stream-lib project](https://github.com/clearspring/stream-lib).
+The goal of this project is implement QDigest for Redis using Lua script.
+
+## Use it with Java.
+
+### Quick method.
+
+Copy `src/main/java` and `src/main/resources` directories into your project.
+
+### Proper method.
+
+1.  Build by using gradle
+
+        $ gradle build
+
+2.  Copy `build/libs/redis-qdigest-X.X.jar` into your project's `libs/`.
+
+    Where `X.X` is replaced by version.
+
+## How to use QDigest in pure Redis+Lua
+
+See redis-lua/README.mkd

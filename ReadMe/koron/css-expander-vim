@@ -1,0 +1,64 @@
+# CSS短縮入力の展開プラグイン
+
+CSS短縮入力の展開プラグインのコンセプト実装です。
+
+## 使い方
+
+1.  `autoload/` と `ftplugin/` を `runtimepath` の通った場所に置く
+2.  Vim で CSSファイルを開く `$ vim test.css`
+3.  アルファベットを数文字入力してから omni 補完を起動する `<C-X><C-O>`
+
+## 動作説明
+
+インサートモードで `rn<C-X><C-O>` と入力した場合、
+`rn` からおおよそ `r.*n` という正規表現を生成し、
+`autoload/css_expander.json` から生成されるパターンから
+マッチする行を補完候補として抽出します。
+その際 **いい感じ** でソートするので使いやすくなってるはずです。
+
+`rn` で補完した際の候補例:
+
+```
+resize: none;
+resize: inherit;
+resize: horizontal;
+cursor: inherit;
+nav-right: inherit;
+background: 
+(以下略)
+```
+
+## 補完候補の追加方法
+
+`autoload/css_expander.json` を直接編集して補完候補を追加します。
+編集後は以下のコマンドを実行して辞書をリロードしてください。
+
+```vim
+:call css_expander#dict_reload()
+```
+
+### `autoload/css_expander.json` のフォーマット
+
+`autoload/css_expander.json` の中身は JSON オブジェクトです。
+JSON オブジェクトのキーは CSS のプロパティ名であり、
+その値は配列で取りうる値を列挙します。例:
+
+```json
+{
+  "box-sizing": [ "content-box", "padding-box", "border-box", "inherit" ]
+}
+```
+
+上記の例は内部で展開されて以下のような辞書になります。
+
+```css
+box-sizing: 
+box-sizing: content-box;
+box-sizing: padding-box;
+box-sizing: border-box;
+box-sizing: inherit;
+```
+
+## 感想
+
+CSS以外にもこの方式は応用効くかも。

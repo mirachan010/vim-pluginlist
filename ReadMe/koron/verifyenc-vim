@@ -1,0 +1,14 @@
+# WHAT IS THIS?
+
+Verify the file is truly in 'fileencoding' encoding.
+
+# CONTRIBUTERS
+
+  * mattn
+
+# CHANGES
+
+## 20-Dec-2011
+
+  * Speed up.
+  * Rewrite in vim7 style partially.

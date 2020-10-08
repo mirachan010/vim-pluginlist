@@ -1,0 +1,47 @@
+# codic vim plugin
+
+A plugin of http://codic.jp/ for Vim.
+
+## Usage
+
+To search a word of under ther cursor.
+
+```
+:Codic
+```
+
+Or give a word as an argument.
+
+```
+:Codic ベクター
+```
+
+To close codic result window, just type `<C-W><C-Z>` or `<C-W>z`.  It is a just
+preview window.
+
+### Unite Source
+
+If you want to use codic-vim as Unite source, please refer
+[unite-codic.vim](https://github.com/rhysd/unite-codic.vim) project.
+
+## Dictionaries
+
+For latest dictionaries, download archive files from
+http://codic.jp/assets/archives/
+
+*   codic-english-dict-{YYYYMMDD}.zip
+*   codic-naming-dict-{YYYYMMDD}.zip
+
+then extract \*.csv files and overwrite in dict/ folder.
+
+Currently, dict/ folder includes dictionaries 20140413 version.
+
+## Special Thanks
+
+*   [Linda\_pp](http://rhysd.hatenablog.com/entry/2014/01/04/152927)
+*   [osyo-manga](http://d.hatena.ne.jp/osyo-manga/20140104/1388844035)
+
+## License
+
+Source codes are distributed under Vim License.
+Dictionaries are redistributed under Creative Commons License (CC BY-SA 3.0).

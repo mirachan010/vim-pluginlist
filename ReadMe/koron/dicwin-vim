@@ -1,0 +1,40 @@
+# dicwin.vim - Dictionary window
+
+## Usage
+
+  1. Install this plugin into your vim.
+  2. Get dictionary file (gene.txt).
+    * Download from http://www.namazu.org/~tsuchiya/sdic/data/gene.html
+    * Convert it to UTF-8, if you prefer 'encoding=utf-8' (see more below)
+  3. Put gene.txt at ~/.vim/dict/ (or ~/vimfiles/dict
+  4. Open a document and set cursor on an english word then type <C-k><C-k>
+
+## Shortcuts
+
+  * `<C-k><C-k>`  Search word under cursor.
+  * `<C-k>/`      Search prompted word.
+  * `<C-k>c`      Close dictionary window.
+  * `<C-k>n`      Search next. (with last word)
+  * `<C-k>p`      Search previous. (with last word)
+  * `<C-k>w`      Jump to dictionary window (if exists)
+
+If you set `g:mapleader`, it works with `<leader><C-K>` and others with the
+mapleader. Or if you set `g:dicwin_mapleader` instead, it works with that. 
+
+# OTHERS
+
+## UNDER UTF-8/UTF-8環境での利用 (only Japanese)
+
+配布されているgene.txt内に不具合があり、encoding=utf-8の環境で利用すると文字化
+けを起こします。これを回避するにはgene.txtを手動で編集して(該当箇所を削除)して
+ください。
+
+Vimでは以下のとおり操作をすることで該当箇所を削除できます。参考にしてください。
+
+```
+:e ++enc=cp932 gene.txt
+:91697,91698d
+:w!
+```
+
+<!-- vim:set ts=8 sts=2 sw=2 tw=0 et: -->
