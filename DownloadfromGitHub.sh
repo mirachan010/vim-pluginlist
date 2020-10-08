@@ -75,7 +75,7 @@ if [ -f ./list_new ];then
     sort -u ./CheckedFiles/${NAME}.list -o ./CheckedFiles/${NAME}.list
     git add ./list
     git commit -m "add ${NAME}"
-    git add ./CheckedFiles/${NAME}.list
+    git add ./CheckedFiles/.
     git commit -m "new repos ${NAME}"
     git add ./ReadMe/${NAME}/.
     git commit -m "new readme ${NAME}"
