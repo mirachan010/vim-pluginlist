@@ -1684,3 +1684,6 @@ yql-query
 zencoding-vim
 zenn-contents
 zinc-launcher
+dot.emacs.d
+gomain
+go-sqlite3-upgrade
