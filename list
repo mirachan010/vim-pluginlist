@@ -1337,12 +1337,14 @@ Valloric/YouCompleteMe
 Valodim/vim-zsh-completion
 vim-airline/vim-airline
 vim-airline/vim-airline-themes
+vim/colorschemes
 vim-jp/autofmt
 vim-jp/vim-go-extra
 vim-jp/vim-sweep_trail
 vim-jp/vim-vimlparser
 vim-jp/vital-complete
 vim-jp/vital.vim
+vim/killersheep
 vim-scripts/0scan
 vim-scripts/0x7A69_dark.vim
 vim-scripts/256_darkdot
