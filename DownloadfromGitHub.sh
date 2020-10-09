@@ -34,41 +34,39 @@ touch ./CheckedFiles/${NAME}.list
 comm <(sort ./${NAME}.list) <(sort ./CheckedFiles/${NAME}.list) -23 > ./check.list
 rm ./${NAME}.list
 Max=`cat ./check.list |wc -l`
-COUNT=0
-VCOUNT=0
-COLOR=0
+COUNT=0;VCOUNT=0;COLOR=0
 if [ ! -d ./ReadMe/${NAME} ]; then
     mkdir ./ReadMe/${NAME}
 fi
-while read line
-do
-    git clone git://github.com/${NAME}/$line --depth=1 > /dev/null 2>&1
-    if ls ./$line/colors/*.vim >/dev/null 2>&1;then
-        COLOR=1
-    else
-        COLOR=0
-    fi
-    if [ -d ./$line/autoload -o -d ./$line/plugin -o $COLOR -eq 1 -o -d ./$line/rplugin/ -o -d ./$line/lua ];then
-        echo ${NAME}/$line >> list_new
-        VCOUNT=$(( VCOUNT + 1 ))
-        COLOR=0
-        if [ -e ./$line/README.md ];then
-            cp ./$line/README.md ./ReadMe/${NAME}/$line
-        elif [ -e ./$line/README.mkd ]; then
-            cp ./$line/README.mkd ./ReadMe/${NAME}/$line
+if [ -f ./check.list ];then
+    while read line; do
+        git clone git://github.com/${NAME}/$line --depth=1 > /dev/null 2>&1
+        if ls ./$line/colors/*.vim >/dev/null 2>&1;then
+            COLOR=1
+        else
+            COLOR=0
         fi
-        touch ./ReadMe/${NAME}/$line
-    fi
-    echo $line >> ./CheckedFiles/${NAME}.list
-    COUNT=$(( COUNT + 1 ))
-    echo $COUNT/$Max -- $VCOUNT
-    rm -rf ./$line &
-    sleep 10 &
-    wait
-done < ./check.list
-rm ./check.list
+        if [ -d ./$line/autoload -o -d ./$line/plugin -o $COLOR -eq 1 -o -d ./$line/rplugin/ -o -d ./$line/lua ];then
+            echo ${NAME}/$line >> list_new
+            VCOUNT=$(( VCOUNT + 1 ))
+            COLOR=0
+            if [ -e ./$line/README.md ];then
+                cp ./$line/README.md ./ReadMe/${NAME}/$line
+            elif [ -e ./$line/README.mkd ]; then
+                cp ./$line/README.mkd ./ReadMe/${NAME}/$line
+            fi
+            touch ./ReadMe/${NAME}/$line
+        fi
+        echo $line >> ./CheckedFiles/${NAME}.list
+        COUNT=$(( COUNT + 1 ))
+        echo $COUNT/$Max -- $VCOUNT
+        rm -rf ./$line &
+        sleep 10 &
+        wait
+    done < ./check.list
+fi
 echo checking
-if [ -f ./list_new ];then
+if [ -f ./check.list ];then
     comm <(sort ./list_new) <(sort ./list) -23 >> list
     rm ./list_new
     sort -u list -o list
@@ -80,4 +78,5 @@ if [ -f ./list_new ];then
     git add ./ReadMe/${NAME}/.
     git commit -m "new readme ${NAME}"
 fi
+rm ./check.list
 echo finish
