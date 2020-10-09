@@ -10,5 +10,5 @@ This plugin automatically add the following actions to `file` scheme.
 
 | Mapping | Action               | Description                                                                          |
 | ------- | -------------------- | ------------------------------------------------------------------------------------ |
-| `^`     | `project-top`        | Find `.git` from the node and enter a found directory                                |
+|         | `project-top`        | Find `.git` from the node and enter a found directory                                |
 |         | `project-top:reveal` | Find `.git` from the node and enter a found directory with revealing the cursor node |
