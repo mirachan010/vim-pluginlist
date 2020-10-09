@@ -17,7 +17,7 @@ Plug 'prabirshrestha/asyncomplete-necosyntax.vim'
 ```vim
 au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#necosyntax#get_source_options({
     \ 'name': 'necosyntax',
-    \ 'whitelist': ['*'],
+    \ 'allowlist': ['*'],
     \ 'completor': function('asyncomplete#sources#necosyntax#completor'),
     \ }))
 ```
