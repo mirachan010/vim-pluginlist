@@ -8,6 +8,7 @@ altercation/vim-colors-solarized
 autozimu/LanguageClient-neovim
 a/vim-snippets
 a/vim-trash-polka
+bdukes/Vim-Config
 c000/rapidfire.vim
 cocopon/bundle-preset.vim
 cocopon/colorswatch.vim
