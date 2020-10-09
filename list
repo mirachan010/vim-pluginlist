@@ -8,6 +8,9 @@ altercation/vim-colors-solarized
 autozimu/LanguageClient-neovim
 a/vim-snippets
 a/vim-trash-polka
+Bakudankun/BackAndForward.vim
+Bakudankun/ivi.vim
+Bakudankun/qline.vim
 bdukes/Vim-Config
 c000/rapidfire.vim
 cocopon/bundle-preset.vim
