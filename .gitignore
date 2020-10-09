@@ -1,2 +1,3 @@
 *.list
 ./tmp
+test.sh
