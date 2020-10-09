@@ -129,6 +129,8 @@ haya14busa/vital-synblock
 haya14busa/vital-system-notify
 haya14busa/vital-vimlcompiler
 haya14busa/vital-vim-syntax-echo
+high-moctane/asyncomplete-nextword.vim
+high-moctane/gaming.vim
 honza/dockerfile.vim
 honza/vim-snippets
 honza/writer.vim
