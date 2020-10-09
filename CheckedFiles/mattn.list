@@ -103,6 +103,7 @@ ditz-ja
 docker-cmd
 docs-php-funcref-in-perl
 docx2md
+dot.emacs.d
 dotfiles
 dotnet-blog
 dotnet-blog-posts
@@ -235,6 +236,7 @@ golisp
 go-localereader
 go-lsd
 gom
+gomain
 go-markov
 go-mastodon
 gomate
@@ -304,6 +306,7 @@ go-soundplayer
 gospel
 go-sqlite3
 go-sqlite3-logistics-regression
+go-sqlite3-upgrade
 goss
 gost
 go-stackbuilder
@@ -1684,6 +1687,3 @@ yql-query
 zencoding-vim
 zenn-contents
 zinc-launcher
-dot.emacs.d
-gomain
-go-sqlite3-upgrade
