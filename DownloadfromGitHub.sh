@@ -1,7 +1,7 @@
 #!/bin/bash
 check_mrepo(){
     cat ${NAME}.list
-    read -p "ok?(y/n)\n>>" yn
+    read -p "ok?(y/n)>>" yn
     case "$yn" in
         [yY]*)
             ;;
@@ -14,7 +14,7 @@ check_mrepo(){
 
 dl_orepo(){
     echo "What your GitHubID?"
-    read -p  "What your GitHubID?\n>>" USERNAME
+    read -p  "What your GitHubID?>>" USERNAME
     echo download repositories list
     curl -u ${USERNAME} "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">${NAME}_1
     echo downloaded repositories list
@@ -71,7 +71,7 @@ loops(){
     rm ./check.list
 }
 
-read -p "username?\n>>" NAME
+read -p "username?>>" NAME
 my-repositories ${NAME} > ./${NAME}.list
 TEST=`cat ${NAME}.list|wc -l`
 ORG=0; COUNT=0; VCOUNT=0; COLOR=0
