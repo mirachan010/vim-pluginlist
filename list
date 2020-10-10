@@ -5006,6 +5006,10 @@ Yggdroot/LeaderF-marks
 Yggdroot/twoline
 Yggdroot/vim-mark
 Yggdroot/vim-plug
+yuki-ycino/asyncomplete-dictionary
+yuki-ycino/fzf-preview.vim
+yuki-ycino/ncm2-dictionary
+yuki-ycino/nvim-remote-plugin-with-typescript-example
 yuttie/comfortable-motion.vim
 yuttie/darkfruit.vim
 yuttie/dot-vim
