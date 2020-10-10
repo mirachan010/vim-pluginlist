@@ -65,6 +65,13 @@ AndrewRadev/yankwin.vim
 andymass/vim-matchup
 andymass/vim-pkg-test
 andymass/vim-tradewinds
+antoinemadec/coc-fzf
+antoinemadec/FixCursorHold.nvim
+antoinemadec/test
+antoinemadec/trytravis_repo
+antoinemadec/vim-highlight-groups
+antoinemadec/vim-multiple-cursors
+antoinemadec/vim-verilog-instance
 APZelos/blamer.nvim
 APZelos/gitline.vim
 autozimu/LanguageClient-neovim
