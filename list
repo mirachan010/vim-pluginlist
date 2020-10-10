@@ -1242,6 +1242,10 @@ t9md/vim-underlinetag
 t9md/vim-unite-ack
 t9md/vim-unite-experiment
 t9md/vim-unite-lines
+taohexxx/lightline-buffer
+taohexxx/lightline-solarized
+taohexxx/phxpaxos
+taohexxx/vim-colors-solarized
 thinca/vim-ambicmd
 thinca/vim-auto_source
 thinca/vim-befunge
