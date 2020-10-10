@@ -44,6 +44,9 @@ AndrewRadev/whitespaste.vim
 AndrewRadev/writable_search.vim
 AndrewRadev/xruntime.vim
 AndrewRadev/yankwin.vim
+andymass/vim-matchup
+andymass/vim-pkg-test
+andymass/vim-tradewinds
 autozimu/LanguageClient-neovim
 a/vim-snippets
 a/vim-trash-polka
