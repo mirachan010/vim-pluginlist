@@ -74,6 +74,7 @@ antoinemadec/vim-multiple-cursors
 antoinemadec/vim-verilog-instance
 APZelos/blamer.nvim
 APZelos/gitline.vim
+arcticicestudio/nord-vim
 autozimu/LanguageClient-neovim
 a/vim-snippets
 a/vim-trash-polka
