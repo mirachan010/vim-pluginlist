@@ -169,6 +169,7 @@ dhruvasagar/vim-table-mode
 dhruvasagar/vim-testify
 dhruvasagar/vim-zoom
 easymotion/vim-easymotion
+elzr/vim-perma
 farmergreg/vim-lastplace
 fatih/vim-go
 fatih/vim-hclfmt
