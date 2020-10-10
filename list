@@ -117,6 +117,14 @@ cocopon/svss.vim
 cocopon/todo.vim
 cocopon/vaffle.vim
 codota/tabnine-vim
+cohama/agit.vim
+cohama/easy-colorcolumn
+cohama/lexima.vim
+cohama/the-ocamlspot.vim
+cohama/.vim
+cohama/vim-insert-linenr
+cohama/vim-smartinput-endwise
+cohama/vim-themis-helper-expect
 cormacrelf/fuzzy-projectionist.vim
 cormacrelf/vim-colors-github
 ctrlpvim/ctrlp.vim
