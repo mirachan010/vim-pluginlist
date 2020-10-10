@@ -47,6 +47,8 @@ AndrewRadev/yankwin.vim
 andymass/vim-matchup
 andymass/vim-pkg-test
 andymass/vim-tradewinds
+APZelos/blamer.nvim
+APZelos/gitline.vim
 autozimu/LanguageClient-neovim
 a/vim-snippets
 a/vim-trash-polka
