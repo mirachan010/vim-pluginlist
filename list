@@ -182,6 +182,10 @@ godlygeek/vim-files
 godlygeek/windowlayout
 gyim/dotvim
 gyim/vim-boxdraw
+hail2u/h2u_colorscheme
+hail2u/vim-float-round
+hail2u/vim-solarized-g
+hail2u/vim-tabcom
 hashue/greeting-vim-plugin
 haya14busa/dein-command.vim
 haya14busa/eew.vim
