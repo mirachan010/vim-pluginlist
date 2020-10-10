@@ -311,6 +311,8 @@ justinmk/vim-dirvish
 justinmk/vim-gtfo
 justinmk/vim-sneak
 justinmk/vim-syntax-extra
+kato-k/command-palette.vim
+kato-k/nyancat.vim
 kkiyama117/zenn-vim
 koron/chalice
 koron/codic-vim
