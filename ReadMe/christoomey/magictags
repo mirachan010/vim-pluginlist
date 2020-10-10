@@ -1,0 +1,87 @@
+# MagicTags
+
+MagicTags is a [Vim][] plugin that automates ctags generation for projects
+using git.
+
+MagicTags is similar to the [AutoTag][] plugin, but is simpler in its
+implementation and most notably uses native vimscript.
+
+The MagicTags plugin hooks into the save action and will attempt to update
+the project's tags file for the file being saved. The key feature is that it
+performs an incremental update of the tags file. Although ctags has the ability
+to perform this sort of incremental update, it does not clear out old tags.
+This is where MagicTags comes in: it will both remove old tags and update
+new tags, automatically, as you save.
+
+Magictags only auto-updates when it detects it's in a git repository.  It saves
+the tags file in your repository root: you should add `tags` to your
+.gitignore.
+
+## Installation
+
+MagicTags expects an up-to-date [exuberant ctags][]. The version of ctags that
+comes with OS X is insufficient, use `brew install ctags` to install a working
+version. Linux and BSD users should be able to install exuberant-ctags via
+their respective package managers.
+
+The easiest way to install MagicTags is to use [Pathogen][], [Vundle][] or
+similar plugin management option to add it to Vim's runtime path.
+
+For **Vundle**, add the following line to your vimrc:
+
+``` vim
+Bundle 'thoughtbot/vim-magictags'
+```
+
+Then from within Vim run the `:BundleInstall` command and Vundle will take care
+of the rest.
+
+For **Pathogen**, run the following commands in your shell:
+
+``` bash
+cd ~/.vim
+mkdir -p bundle # creates bundle directory if it doesn't exist
+cd bundle
+git clone https://github.com/thoughtbot/vim-magictags.git
+```
+
+## Known Issues
+
+### Repository changes outside of vim
+
+If the contents of your repository change outside of vim, MagicTags won't know
+and will not update your tags file. This is because MagicTags hooks into vim's
+save action and has no knowledge of changes that happen outside vim.
+
+The kinds of changes that will cause your tags file to get out of date include:
+
+* git pull / rebase / rm / checkout,
+* File adds/deletes/modifications from the shell,
+* Initializers (or other code generators) that create new files,
+* Or any other action that effect the contents of your repository outside of
+  vim.
+
+If you change repository contents outside of vim, use the
+`:MagictagsInitTagsFile` command inside vim to regenerate your tags file.
+
+## Credits
+
+![thoughtbot](http://thoughtbot.com/assets/tm/logo.png)
+
+Magictags is maintained and funded by [thoughtbot, inc][].
+The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+
+Thank you, [contributors][]!
+
+## License
+
+Magictags is © 2013 thoughtbot, inc. It is free software, and may be
+redistributed under the terms specified in the LICENSE file.
+
+[Vim]: http://www.vim.org/
+[Pathogen]: https://github.com/tpope/vim-pathogen
+[Vundle]: https://github.com/gmarik/vundle
+[AutoTag]: http://www.vim.org/scripts/script.php?script_id=1343
+[ctags]: http://ctags.sourceforge.net/
+[thoughtbot, inc]: http://thoughtbot.com/community
+[contributors]: http://github.com/thoughtbot/vim-magictags/graphs/contributors

@@ -1,0 +1,29 @@
+# Vim Simple Wiki (Swiki)
+
+Swiki is a simple plugin for managing a plain text wiki.
+
+
+Want to create a simple wiki vim plugin to replace vim wiki
+
+- <enter> to create/follow a link
+- with visual selected, replace spaces with dash then wiki link (no spaces in file names!)
+- diary file sections for each entry. Map to create new entry. Pretend to file with time & date stamp and upper section line '-'\*78
+
+All files should be markdown. No need to create our own syntax. Store in Dropbox?
+
+Additional syntax highlighting for wiki links => [[Link-Text]]
+
+Want visibility of how often a file changes. Git can do this, but is heavyweight. Dropbox not quite the same. Hook into buff write post and increment index file with counter?
+
+Provide commands to manage wiki
+
+- orphaned pages
+- list pages by link count
+- list pages by edit count
+- list pages by last edit date
+- list pages by modified date
+- list pages by create date
+
+This plugin is heavily inspired by the[vimwiki][]
+
+[vimwiki]: http://www.vim.org/scripts/script.php?script_id=2226

@@ -1,0 +1,5 @@
+# Right Motion
+
+Right Motion is a Vim plugin that helps train intermediate and advanced Vim
+users on the optimal use of Vim motions. This is accomplished primarily by
+ensuring the user does not overuse the hjkl motions.
