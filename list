@@ -995,6 +995,8 @@ mhinz/vim-startify
 mhinz/vim-tmuxify
 mhinz/vim-tree
 mirachan010/vim-denite-plugins
+moll/vim-bbye
+moll/vim-node
 mopp/AOJ.vim
 mopp/autodirmake.vim
 mopp/backscratcher
