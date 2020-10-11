@@ -754,6 +754,7 @@ machakann/vim-textobj-functioncall
 machakann/vim-Verdin
 machakann/vital-Schedule
 majutsushi/tagbar
+MattesGroeger/vim-bookmarks
 mattn/asyncomplete-google-suggest.vim
 mattn/asyncomplete-lsp.vim
 mattn/asyncomplete.vim
