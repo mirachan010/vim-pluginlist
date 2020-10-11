@@ -725,6 +725,9 @@ liuchengxu/vim-which-key
 liuchengxu/vista.vim
 l-tchen/auto-dark-mode.vim
 l-tchen/vim-dark-mode-switcher
+luochen1990/indent-detector.vim
+luochen1990/rainbow
+luochen1990/select-and-search
 machakann/asyncomplete-ezfilter.vim
 machakann/asyncomplete-unicodesymbol.vim
 machakann/vim-colorscheme-imas
