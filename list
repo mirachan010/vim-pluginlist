@@ -432,6 +432,12 @@ jiangmiao/auto-pairs
 joshdick/onedark.vim
 jparise/vim-graphql
 jparise/vim-phabricator
+jsfaint/coc-neoinclude
+jsfaint/gen_tags.vim
+jsfaint/ncm2-neoinclude
+jsfaint/ncm2-syntax
+jsfaint/ncm2-vim
+jsfaint/purge_undodir.vim
 junegunn/dummy1
 junegunn/dummy2
 junegunn/dummy3
