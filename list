@@ -308,6 +308,7 @@ hrsh7th/fern-mapping-call-function.vim
 hrsh7th/fern-mapping-collapse-or-leave.vim
 hrsh7th/nvim-compe
 hrsh7th/nvim-tuil
+hrsh7th/vim-aim
 hrsh7th/vim-candle
 hrsh7th/vim-compete
 hrsh7th/vim-compete-lamp
