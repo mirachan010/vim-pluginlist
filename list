@@ -1054,11 +1054,13 @@ ncm2/ncm2-ultisnips
 ncm2/ncm2-vim
 ncm2/ncm2-vim-lsp
 ncm2/nvim-typescript
+neoclide/coc-denite
 neoclide/coc-jedi
 neoclide/coc-neco
 neoclide/coc.nvim
 neoclide/denite-extra
 neoclide/denite-git
+neoclide/keep.nvim
 neoclide/macdown.vim
 neoclide/macnote.vim
 neoclide/mycomment.vim
