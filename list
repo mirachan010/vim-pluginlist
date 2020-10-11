@@ -295,6 +295,7 @@ high-moctane/gaming.vim
 honza/dockerfile.vim
 honza/vim-snippets
 honza/writer.vim
+hotwatermorning/auto-git-diff
 hrsh7th/asyncomplete-lamp
 hrsh7th/defx-diagnostics-experimental
 hrsh7th/denite-converter-prioritize-basename
