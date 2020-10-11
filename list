@@ -715,6 +715,14 @@ lifepillar/vim-ucf
 lifepillar/vim-wwdc16-theme
 lifepillar/vim-wwdc17-theme
 lifepillar/vim-zeef
+liuchengxu/eleline.vim
+liuchengxu/graphviz.vim
+liuchengxu/space-vim-dark
+liuchengxu/space-vim-theme
+liuchengxu/vim-better-default
+liuchengxu/vim-clap
+liuchengxu/vim-which-key
+liuchengxu/vista.vim
 l-tchen/auto-dark-mode.vim
 l-tchen/vim-dark-mode-switcher
 machakann/asyncomplete-ezfilter.vim
