@@ -1111,6 +1111,13 @@ NLKNguyen/pipe-mysql.vim
 NLKNguyen/pipe.vim
 ntpeters/vim-airline-colornum
 ntpeters/vim-better-whitespace
+nvim-lua/completion-nvim
+nvim-lua/diagnostic-nvim
+nvim-lua/lsp_extensions.nvim
+nvim-lua/lsp-status.nvim
+nvim-lua/plenary.nvim
+nvim-lua/popup.nvim
+nvim-lua/telescope.nvim
 nvim-treesitter/completion-treesitter
 nvim-treesitter/highlight.lua
 nvim-treesitter/module-template
