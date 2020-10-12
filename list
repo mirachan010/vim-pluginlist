@@ -1251,6 +1251,16 @@ osyo-manga/vital-paradise
 osyo-manga/vital-reti
 osyo-manga/vital-reunions
 osyo-manga/vital-unlocker
+othree/csscomplete.vim
+othree/eregex.vim
+othree/fecompressor.vim
+othree/html5.vim
+othree/javascript-libraries-syntax.vim
+othree/jspc.vim
+othree/scroll3quarter.vim
+othree/tern
+othree/tern_for_vim
+othree/vim-autocomplpop
 pangloss/vim-erlang
 pangloss/vim-simplefold
 patstockwell/vim-monokai-tasty
