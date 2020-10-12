@@ -1300,6 +1300,7 @@ pocke/vim-textobj-rubyexp
 pocke/vueim
 pocke/whichpr
 pocke/yaml-path.vim
+posva/Rndm
 prabirshrestha/asyncomplete-buffer.vim
 prabirshrestha/asyncomplete-emmet.vim
 prabirshrestha/asyncomplete-emoji.vim
