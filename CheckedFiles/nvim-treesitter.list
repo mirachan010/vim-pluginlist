@@ -4,6 +4,8 @@ module-template
 neovim
 nvim-tree-docs
 nvim-treesitter
+nvim-treesitter-refactor
+nvim-treesitter-textobjects
 playground
 tree-sitter
 tree-sitter-c
