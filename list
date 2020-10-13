@@ -1815,6 +1815,7 @@ tpope/vim-surround
 tpope/vim-tbone
 tpope/vim-unimpaired
 tpope/vim-vinegar
+tpope/vim-vividchalk
 tsuyoshicho/codic-web.vim
 tsuyoshicho/StatuslineUpdateTimer.vim
 tsuyoshicho/transparency.vim
