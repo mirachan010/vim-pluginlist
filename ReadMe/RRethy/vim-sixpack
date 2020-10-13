@@ -1,0 +1,269 @@
+# DEPRECATED - I have switched to using [backpack.vim](https://github.com/RRethy/dotfiles/blob/master/nvim/autoload/backpack.vim)
+
+![](https://user-images.githubusercontent.com/21000943/44614748-c38a5000-a7de-11e8-99cf-a5126cf6426f.png)
+
+# vim-sixpack
+
+sixpack.vim - A lightweight package manager for Neovim/Vim8
+
+## Table Of Contents
+
+  * [Overview](#overview)
+  * [Why use vim-sixpack](#why-use-vim-sixpack)
+  * [Concept](#concept)
+  * [Requirements](#requirements)
+  * [Installation](#installation)
+    * [Neovim](#neovim)
+    * [Vim](#vim)
+  * [Basic Usage](#basic-usage)
+  * [All Commands](#all-commands)
+  * [Adding a plugin](#adding-a-plugin)
+  * [PackMetadata options](#packmetadata-options)
+  * [Running a build for plugin](#running-a-build-for-plugin)
+  * [Pack Manifest](#pack-manifest)
+  * [PackBrowse](#packbrowse)
+  * [Global Options](#global-options)
+  * [Credit](#credit)
+  * [Licence](#licence)
+
+## Overview
+Lightweight package manager that makes it easier to use Neovim/Vim8 package support.
+
+## Why use vim-sixpack
+* **Super fast** startup using Neovim and Vim 8's native package support
+* Install and use plugins without leaving Vim
+* Asynchronously update/add plugins
+* Super portable with the [Pack Manifest](#pack-manifest)
+* Lazy load plugins easily using Opt functionality
+* Reduce vimrc boilerplate code
+* Creates shallow clones to minimize disk space usage and download time
+
+vim-sixpack acts as a wrapper around the packages feature in Neovim and Vim 8. It aims to make it easier to do common tasks and manage the installed plugins. vim-sixpack makes it easier to do the following:
+
+1. Install plugins to opt/ or start/ (and source them without leaving Vim)
+2. Updating plugins
+3. Portability (see [Pack Manifest](#pack-manifest))
+4. Removing plugins
+5. Post-update hook builds
+6. View installed plugins
+7. Generate helptags
+
+vim-sixpack also aims to rid the vimrc of useless lines such as `call minpac#add('rrethy/vim-illuminate')` or `Plug 'rrethy/vim-illuminate`. You only need good lines that *actually do stuff*, no more useless lines. The only lines that will go into the vimrc are package configuration (I refer to it as package metadata).
+
+These boilerplate lines previously had two useful side-effects: view installed plugins, add portability. However, vim-sixpack does this much better using [PackBrowse](#packbrowse) and [Pack Manifest](#pack-manifest) respectively.
+
+## Requirements
+
+* Neovim 0.2+ OR Vim 8.0.0050+
+* OS: macOS or Linux
+
+> Note: No Windows support since I don't use Windows and don't know much about it. I am open to PRs adding Windows support.
+
+## Installation
+
+### Neovim
+
+```
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/rrethy/vim-sixpack/master/autoload/sixpack.vim
+```
+
+### Vim
+
+```
+curl -fLo ~/.vim/autoload/sixpack.vim --create-dirs \
+    https://raw.githubusercontent.com/rrethy/vim-sixpack/master/autoload/sixpack.vim
+```
+
+## Basic Usage
+
+* Add `call sixpack#init()` to your ~/.vimrc (or ~/.config/nvim/init.vim for Neovim)
+  * sixpack#init() can be passed an optional dir that will be used as the location of the package that contains your installed plugins. By default it will use `~/.local/share/nvim/site/pack` for Neovim and `~/.vim/pack` for Vim.
+* This will give you a range of [commands](#all-commands) to add/update/remove/browse plugins. It will also give you a `PackMetadata` command where you can specify options for plugins you add.
+* To add a plugin, Vim can be open editing any file, and you can run `:PackAdd {github url or author/plugin_name}` and your plugin will be installed to the start dir. Use `:PackAddOptional` to add a plugin to the opt/ dir.
+
+### Examples
+
+```vim
+call sixpack#init()
+
+" Make sure to use single quotes
+
+" nerdtree will be loaded when you trigger :NERDTreeToggle
+PackMetadata 'nerdtree', {'on': 'NERDTreeToggle'}
+
+" When you update command-t, the command will be executed at the plugin root
+PackMetadata 'command-t', {
+  \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
+  \ }
+
+" This is a convenience mapping, you can just use :PackBrowse to view your plugins
+nnoremap <silent> <Leader>b :PackBrowse<CR>
+```
+
+## All Commands
+
+| Command                             | Description                                                        |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| `PackAdd {name}+` | Install {name}(s) to start/ dir|
+| `PackAddOptional {name}+` | Install {name}(s) to opt/ dir|
+| `PackDo {name}, {cmd}` | Do {cmd} in the root of {name}. {cmd} and {name} should be single quoted strings |
+| `PackRemove {name}+` | Remove {name}(s) passed in |
+| `PackUpdate [, {name}+]` | Update {name}(s) passed in, if none passed in, then update all plugins |
+| `PackMakeOptional {name}+` | Move {name}(s) to opt/ |
+| `PackMakeStart {name}+` | Move {name}(s) to start/ |
+| `PackBrowse` | Open a window that displays all installed plugins and their type |
+| `PackHelptags` | Regenerate all helptags (this should not be needed since vim-sixpack will do it automatically |
+| `PackMetadata {name}, {dict}` | Used in vimrc to add plugin configuration |
+| `SixpackManifestGenerate [, {dir}]` | Generate .packmanifest (See below) |
+| `SixpackManifestRead [, {file}]` | Read .packmanifest (See below) |
+| `SixpackUpgrade` | Upgrade vim-sixpack |
+| `SixpackUninstall` | Uninstall vim-sixpack |
+
+## Adding a plugin
+
+While inside Vim, you can add a plugin using `:PackAdd` (installs to start/ dir) OR `:PackAddOptional` (installs to opt/ dir).
+
+When using `:PackAdd`, the plugin will also be sourced so you don't need to restart Vim to start using it!
+
+### Examples
+
+Note: No quotes around the plugin
+
+```vim
+:PackAdd tpope/vim-dadbod
+:PackAdd https://github.com/tpope/vim-dadbod
+:PackAdd https://github.com/tpope/vim-dadbod.git
+:PackAdd git@github.com:tpope/vim-dadbod.git
+:PackAdd tpope/vim-unimpaired tpope/vim-dadbod rrethy/vim-illuminate | PackAdd https://github.com/tpope/vim-dadbod tpope/vim-fugitive
+```
+
+`PackAddOptional` can be substituted above to install the plugin to the opt dir.
+
+For each command, you can pass in a variety of plugins in any format that best suits you. You can also separate the calls with a `|`.
+
+## PackMetadata options
+
+`PackMetadata {plugin}, {dict}`
+
+> {plugin} is a single-quoted string representing the name of the plugin. {dict} takes keys of ['on'](#'on') and ['do'](#'do').
+
+`PackMetadata` can be used in your vimrc **after** `call sixpack#init()`.
+
+#### 'on'
+
+`'on'` is used for opt plugins (plugins inside the opt/ dir). When the command specified by 'on' gets called, the plugin will then be loaded.
+
+The value passed can be a string, or a list of strings representing commands.
+
+#### 'do'
+
+`'do'` is used for plugins that need to be rebuilt each update. The command will be run in the root dir of the plugin each time the plugin is updated.
+
+The value passed in can be a shell command, an ex-command (must be prefixed with ':'), or a function reference (see example below)
+
+#### Example
+
+```vim
+" PackMetadata must be used after sixpack#init()
+call sixpack#init()
+
+" Make sure to use single quotes
+
+PackMetadata 'vimproc.vim', { 'do': 'make' }
+PackMetadata 'YouCompleteMe', { 'do': './install.py' }
+PackMetadata 'command-t', {
+  \   'do': 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
+  \ }
+PackMetadata 'deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+PackMetadata 'YouCompleteMe', { 'do': function('BuildYCM') }
+
+PackMetadata 'nerdtree', {'on': 'NERDTreeToggle'}
+PackMetadata 'nerdtree', {'on': ['NERDTreeToggle', 'NERDTree']}
+```
+
+## Running a build for a plugin
+
+For some plugins you will need to build them after installing. Similar to `:PackAdd[Optional]`, you can build the plugin from anywhere in Vim. Simply use `:PackDo`, pass it the plugin name as a single quoted string and a command to execute as a single quote string in the following format:
+
+```vim
+:PackDo {name}, {cmd}
+```
+
+> Note: {cmd} will be done asynchronously
+
+### Example
+
+```vim
+PackDo 'command-t', 'cd ruby/command-t/ext/command-t && ruby extconf.rb && make'
+```
+
+## Pack Manifest
+
+The pack manifest has the goal of portability, it can be version controlled with your Vim configuration and you can easily install your plugins on various machines.
+
+The manifest file is simply a dotfile by the name `.packmanifest` that sits by default in your configuration folder (`~/.config/nvim` for Neovim and `~/.vim` for Vim). It can be generated read elsewhere, but these defaults are recommended.
+
+
+### Basic Usage
+
+Using `:SixpackManifestGenerate` and `:SixpackManifestRead` will read and write the `.packmanifest` file (`~/.config/nvim/.packmanifest` for Neovim and `~/.vim/.packmanifest` for Vim).
+
+When it gets read, the plugins will also be installed to their correct location (opt/ or start/) inside the sixpack package. Assuming you are VC'ing your dotfiles, you can simply use `:SixpackManifestGenerate` to generate the manifest, commit and push your changes. Then when you pull your dotfiles on your other machine, simply run `:SixpackManifestRead` and everything will be installed correctly.
+
+### Advanced Usage
+
+1. `:SixpackManifestGenerate` accepts a dir to generate the .pluginmanifest file in
+  * eg. `:SixpackManifestGenerate ~/some/other/dir`
+2. `:SixpackManifestRead` accepts a path to a file named .pluginmanifest, and will read from this file the plugin information
+  * eg. `:SixpackManifestRead ~/some/other/dir/.packmanifest`
+
+The pack manifest has a very simple layout, for example:
+
+```
+start https://github.com/junegunn/fzf.vim.git
+start https://github.com/tpope/vim-surround.git
+start https://github.com/tpope/vim-unimpaired.git
+opt https://github.com/scrooloose/nerdtree.git
+```
+
+It has two parts, either `start` or `opt` then the url of the plugin.
+
+## PackBrowse
+
+`:PackBrowse` displays your installed plugins and their locations. It also offer two commands to interact with a single or a range of plugins:
+
+![](https://user-images.githubusercontent.com/21000943/44616471-59d16c80-a805-11e8-9827-f560cae9a860.png)
+
+| Command                             | Description                                                        |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| `u` | Update the plugin under the cursor (can be used in visual mode to select a range) |
+| `r` | Remove the plugin under the cursor (can be used in visual mode to select a range) |
+
+**TIP**: You are able to visually highlight the entire file, and press `r` to remove all your plugins. I specifically did not offer a command to do this, but if your want an easy way to remove all plugins, this would be the best solution.
+
+## Global Options
+
+| Option                             | Description                                                        |
+| ----------------------------------- | ------------------------------------------------------------------ |
+| `g:SixpackLogginglevel` | Verbose(2), Normal(1), Off(0) - Default = 2 |
+
+## Plugins from other directories
+
+It may be required to have a plugin that does not reside inside a package. An example of this is [fzf.vim](https://github.com/junegunn/fzf.vim). You would be able to work around this by installing fzf.vim with `:PackAdd`, then adding to the runtimepath in your vimrc.
+
+### Example
+
+```
+set runtimepath+=~/.fzf
+```
+
+## Credit
+
+* Prabir Shrestha (as the author of [async.vim](https://github.com/prabirshrestha/async.vim))
+* Junegunn Choi (as the autor of [vim-plug](https://github.com/junegunn/vim-plug))
+* k-takata (as the author of [minpac](https://github.com/k-takata/minpac))
+
+## Licence
+
+MIT
