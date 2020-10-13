@@ -1,0 +1,354 @@
+# vim-snipexp
+
+This plugin provides to expand a snippet.
+
+# Concepts
+
+* This plugin supports Vim and Neovim.
+* This plugin does not provide to customize user-settings, due to avoid confusion of what a snippet trigger expands.
+
+# Before using
+map a key to `snipexp#expand()` such as following code on your .vimrc:
+
+```
+inoremap <nowait><expr><C-f>   snipexp#expand()
+```
+
+# Behaviors of Vim script
+<details>
+  
+## if statement
+__before__
+```
+if<C-f>
+```
+__after__
+```
+if |
+endif
+```
+
+## def statement
+__before__
+```
+de<C-f>
+```
+__after__
+```
+def! |():
+enddef
+```
+
+## while statement
+__before__
+```
+wh<C-f>
+```
+__after__
+```
+while |
+endwhile
+```
+
+## function statement
+__before__
+```
+fu<C-f>
+```
+__after__
+```
+function! |() abort
+endfunction
+```
+
+## for statement
+__before__
+```
+fo<C-f>
+```
+__after__
+```
+for | in
+endfor
+```
+
+## augroup statement
+__before__
+```
+au<C-f>
+```
+__after__
+```
+augroup |
+  autocmd!
+augroup END
+```
+
+## try statement
+__before__
+```
+tr<C-f>
+```
+__after__
+```
+try|
+catch
+    echoerr v:exception
+    echoerr v:throwpoint
+finally
+endtry
+```
+
+</details>
+  
+# Behaviors of C, C++ and C#
+<details>
+  
+## switch statement
+__before__
+```
+sw<C-f>
+```
+__after__
+```
+switch (|)
+{
+}
+```
+
+## enum statement
+__before__
+```
+en<C-f>
+```
+__after__
+```
+enum |
+{
+};
+```
+
+## if statement
+__before__
+```
+if<C-f>
+```
+__after__
+```
+if (|)
+{
+}
+```
+
+## while statement
+__before__
+```
+wh<C-f>
+```
+__after__
+```
+while (|)
+{
+}
+```
+
+## for statement
+__before__
+```
+fo<C-f>
+```
+__after__
+```
+for (|)
+{
+}
+```
+
+## namespace statement (C++, C# only)
+__before__
+```
+na<C-f>
+```
+__after__
+```
+namespace |
+{
+}
+```
+
+## class statement (C++, C# only)
+__before__
+```
+cl<C-f>
+```
+__after__
+```
+class |
+{
+}
+```
+</details>
+  
+# Behaviors of Rust
+<details>
+  
+## fn statement
+__before__
+```
+fn<C-f>
+```
+__after__
+```
+fn |() {
+}
+```
+
+## if statement
+__before__
+```
+if<C-f>
+```
+__after__
+```
+if | {
+}
+```
+
+## for statement
+__before__
+```
+fo<C-f>
+```
+__after__
+```
+for | in  {
+}
+```
+
+## match statement
+__before__
+```
+ma<C-f>
+```
+__after__
+```
+match | {
+}
+```
+
+## loop statement
+__before__
+```
+lo<C-f>
+```
+__after__
+```
+loop {|
+}
+```
+
+## enum statement
+__before__
+```
+en<C-f>
+```
+__after__
+```
+enum | {
+}
+```
+
+</details>
+  
+# Behaviors of VB
+<details>
+  
+## If statement
+__before__
+```
+If<C-f>
+```
+__after__
+```
+If | Then
+End If
+```
+
+## For statement
+__before__
+```
+Fo<C-f>
+```
+__after__
+```
+For | In
+Next
+```
+
+## Select Case statement
+__before__
+```
+Se<C-f>
+```
+__after__
+```
+Select Case |
+End Select
+```
+
+## With statement
+__before__
+```
+Wi<C-f>
+```
+__after__
+```
+With |
+End With
+```
+
+## Class statement
+__before__
+```
+Cl<C-f>
+```
+__after__
+```
+Class |
+End Class
+```
+
+## Class statement
+__before__
+```
+St<C-f>
+```
+__after__
+```
+Structure |
+End Structure
+```
+
+## Sub statement
+__before__
+```
+Su<C-f>
+```
+__after__
+```
+Sub |()
+End Sub
+```
+
+## Function statement
+__before__
+```
+Fu<C-f>
+```
+__after__
+```
+Function |() As 
+End Function
+```
+
+</details>

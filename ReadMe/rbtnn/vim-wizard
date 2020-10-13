@@ -1,0 +1,20 @@
+
+# vim-wizard
+
+__THIS IS STILL UNDER DEVELOPMENT__  
+
+This plugin provides to search and display information from arbitrary sources using `+popupwin` feature.  
+It's like [unite.vim](https://github.com/Shougo/unite.vim), [vim-clap](https://github.com/liuchengxu/vim-clap), etc and inspired by those.  
+
+## Usage
+
+### :Wizard[!] [{argument}, ...]
+
+## Requirements
+
+* Vim must be compiled with `+popupwin` feature
+
+## License
+
+Distributed under MIT License. See LICENSE.
+
