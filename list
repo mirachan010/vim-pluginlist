@@ -5495,6 +5495,10 @@ w0rp/vim
 w0rp/vim-speech
 wfxr/minimap.vim
 wklken/k-vim
+Xuyuanp/nerdtree-git-plugin
+Xuyuanp/scrollbar.nvim
+Xuyuanp/vimrc
+Xuyuanp/yanil
 ycm-core/neomake
 ycm-core/YouCompleteMe
 yegappan/asyncmake
