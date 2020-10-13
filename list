@@ -1629,6 +1629,9 @@ taohexxx/lightline-buffer
 taohexxx/lightline-solarized
 taohexxx/phxpaxos
 taohexxx/vim-colors-solarized
+terryma/vim-expand-region
+terryma/vim-multiple-cursors
+terryma/vim-smooth-scroll
 thinca/vim-ambicmd
 thinca/vim-auto_source
 thinca/vim-befunge
