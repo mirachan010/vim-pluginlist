@@ -1473,6 +1473,8 @@ RRethy/vim-quickscope
 RRethy/vim-sixpack
 RRethy/vim-spotlight
 RRethy/vim-tranquille
+ryanoasis/vim-devicons
+ryanoasis/vim-external-minimap
 sainnhe/archived-colors
 sainnhe/artify.vim
 sainnhe/edge
