@@ -1647,6 +1647,7 @@ thinca/vim-jautil
 thinca/vim-ku_source
 thinca/vim-localrc
 thinca/vim-logcat
+thinca/vim-nind
 thinca/vim-openbuf
 thinca/vim-operator-sequence
 thinca/vim-painter
