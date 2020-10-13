@@ -18,12 +18,16 @@ MikuMikuDancePortable
 my-pixela-record
 netbsd-liveimage-box
 pandoc-revealjs-slide-template
+redpen-template-base
 renovate-config
 sample-readme-direct-gh-pages
 StatuslineUpdateTimer.vim
 technical-writing-template
 textlint-novel-base
 textlint-tech-base
+textlint-template-base
+textlint-template-novel
+textlint-template-tech
 TIL
 transparency.vim
 TRPGEPUBTemplate
