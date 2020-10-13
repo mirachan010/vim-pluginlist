@@ -1492,6 +1492,10 @@ scrooloose/vimfiles
 scrooloose/vim-orgymode
 scrooloose/vim-slumlord
 scrooloose/whitespace2.0.vim
+segeljakt/vim-isotope
+segeljakt/vim-sentencer
+segeljakt/vim-silicon
+segeljakt/vim-stealth
 sheerun/vim-inspect
 sheerun/vim-polyglot
 sheerun/vimrc
