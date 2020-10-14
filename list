@@ -1294,6 +1294,9 @@ othree/vim-autocomplpop
 pangloss/vim-erlang
 pangloss/vim-simplefold
 patstockwell/vim-monokai-tasty
+pearofducks/dotvim
+pearofducks/vim-quack
+pearofducks/vim-quack-lightline
 pocke/about-pocke-slide
 pocke/ansi_color.vim
 pocke/cuculus.vim
