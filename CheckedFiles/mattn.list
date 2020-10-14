@@ -6,6 +6,7 @@ ansicolor-w32.c
 any_update_on_this_issue
 asyncomplete-google-suggest.vim
 asyncomplete-lsp.vim
+asyncomplete-skk.vim
 asyncomplete.vim
 async.vim
 awesome-ezoe
@@ -72,6 +73,7 @@ ctrlp-hotentry
 ctrlp-jazzradio
 ctrlp-kaomoji
 ctrlp-launcher
+ctrlp-lsp
 ctrlp-mark
 ctrlp-matchfuzzy
 ctrlp-mcdonald
@@ -301,6 +303,7 @@ go-simplenote
 go-sion
 go-sixel
 go-sizedwriter
+go-skkdic
 go-slim
 go-soundplayer
 gospel
@@ -1447,6 +1450,7 @@ sinatter
 siritori
 siritori-bot
 sj-example
+skk-cli
 skkdict.vim
 skk.vim
 slck
@@ -1594,6 +1598,7 @@ vim-metarw-simplenote
 vim-metarw-webdav
 vim-molder
 vim-molder-operations
+vim-molder-preview
 vim-mynumber
 vim-nekokak
 vim-nyancat
@@ -1613,6 +1618,7 @@ vimrole
 vim-rtags
 vim-rubyfmt
 vim-say-mode
+vimscript-logistic-regression-iris
 vim-sl
 vim-sonictemplate
 vim-sonots
