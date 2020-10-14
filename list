@@ -775,6 +775,7 @@ maralla/vim-gocode
 MattesGroeger/vim-bookmarks
 mattn/asyncomplete-google-suggest.vim
 mattn/asyncomplete-lsp.vim
+mattn/asyncomplete-skk.vim
 mattn/asyncomplete.vim
 mattn/async.vim
 mattn/benchvimrc-vim
@@ -797,6 +798,7 @@ mattn/ctrlp-hotentry
 mattn/ctrlp-jazzradio
 mattn/ctrlp-kaomoji
 mattn/ctrlp-launcher
+mattn/ctrlp-lsp
 mattn/ctrlp-mark
 mattn/ctrlp-matchfuzzy
 mattn/ctrlp-mcdonald
@@ -934,6 +936,7 @@ mattn/vim-metarw-simplenote
 mattn/vim-metarw-webdav
 mattn/vim-molder
 mattn/vim-molder-operations
+mattn/vim-molder-preview
 mattn/vim-mynumber
 mattn/vim-nekokak
 mattn/vim-nyancat
