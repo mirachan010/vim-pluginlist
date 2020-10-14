@@ -1630,6 +1630,7 @@ skywind3000/vim-preview
 skywind3000/vim-quickui
 skywind3000/vim-terminal-help
 skywind3000/yamlvim
+slashmili/alchemist.vim
 statox/betterTabs.vim
 statox/colorscheme-changer.vim
 statox/FYT.vim
