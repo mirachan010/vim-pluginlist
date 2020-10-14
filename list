@@ -5507,6 +5507,11 @@ w0rp/python_tools
 w0rp/vim
 w0rp/vim-speech
 wakatime/vim-wakatime
+wellle/context.vim
+wellle/line-targets.vim
+wellle/targets.vim
+wellle/tmux-complete.vim
+wellle/visual-split.vim
 wfxr/minimap.vim
 wklken/k-vim
 Xuyuanp/nerdtree-git-plugin
