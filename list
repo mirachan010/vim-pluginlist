@@ -22,6 +22,8 @@ aiya000/vimshell-command-dehanai.vim
 aiya000/vim-tagjump-locationlist
 aiya000/vim-typescript-good-programmer
 aiya000/vim-webpage
+alok/notational-fzf-vim
+alok/vim-run
 altercation/vim-colors-solarized
 AndrewRadev/andrews_nerdtree.vim
 AndrewRadev/archivitor.vim
