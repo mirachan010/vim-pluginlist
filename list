@@ -433,6 +433,11 @@ jiangmiao/auto-pairs
 joshdick/onedark.vim
 jparise/vim-graphql
 jparise/vim-phabricator
+jreybert/OmniCppComplete
+jreybert/vimagit
+jreybert/vim-align
+jreybert/vim-largefile
+jreybert/vim-selecttabpolicy
 jsfaint/coc-neoinclude
 jsfaint/gen_tags.vim
 jsfaint/ncm2-neoinclude
