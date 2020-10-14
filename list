@@ -1078,6 +1078,7 @@ neoclide/vim-easygit
 neoclide/vim-hug-neovim-rpc
 neoclide/vim-node-rpc
 neoclide/vim-prettier
+neomake/neomake
 neovim/node-host
 neovim/nvimdev.nvim
 neovim/nvim-lspconfig
