@@ -1692,6 +1692,7 @@ taohexxx/vim-colors-solarized
 terryma/vim-expand-region
 terryma/vim-multiple-cursors
 terryma/vim-smooth-scroll
+thiagoalessio/rainbow_levels.vim
 thinca/vim-ambicmd
 thinca/vim-auto_source
 thinca/vim-befunge
