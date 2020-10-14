@@ -5516,6 +5516,11 @@ wesQ3/vim-windowswap
 wesQ3/wombat.vim
 wfxr/minimap.vim
 wklken/k-vim
+wting/bufexplorer.vim
+wting/dotvim
+wting/gitsessions.vim
+wting/pair_files.vim
+wting/rust.vim
 Xuyuanp/nerdtree-git-plugin
 Xuyuanp/scrollbar.nvim
 Xuyuanp/vimrc
