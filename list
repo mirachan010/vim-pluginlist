@@ -1022,6 +1022,9 @@ mopp/unite-animemap
 mopp/unite-battle_editors
 mopp/unite-rss
 mopp/vim-operator-convert-case
+morhetz/gruvbox
+morhetz/rnavcr
+morhetz/vim-termitr
 mtth/compile.vim
 mtth/cursorcross.vim
 mtth/locate.vim
