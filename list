@@ -173,6 +173,7 @@ elzr/vim-perma
 farmergreg/vim-lastplace
 fatih/vim-go
 fatih/vim-hclfmt
+ghifarit53/tokyonight-vim
 godlygeek/colorchart
 godlygeek/csapprox
 godlygeek/from_c_to_pep249
