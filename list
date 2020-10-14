@@ -530,6 +530,9 @@ kana/vim-vspec
 kana/vim-wwwsearch
 kato-k/command-palette.vim
 kato-k/nyancat.vim
+kitagry/asyncomplete-tabnine.vim
+kitagry/vim-gotest
+kitagry/vim-monkey
 kkiyama117/zenn-vim
 koron/chalice
 koron/codic-vim
