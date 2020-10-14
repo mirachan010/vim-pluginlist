@@ -758,6 +758,13 @@ machakann/vim-textobj-functioncall
 machakann/vim-Verdin
 machakann/vital-Schedule
 majutsushi/tagbar
+maralla/completor-neosnippet
+maralla/completor.vim
+maralla/dotvim
+maralla/mycolor
+maralla/snips.vim
+maralla/validator.vim
+maralla/vim-gocode
 MattesGroeger/vim-bookmarks
 mattn/asyncomplete-google-suggest.vim
 mattn/asyncomplete-lsp.vim
