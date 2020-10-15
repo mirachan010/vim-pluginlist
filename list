@@ -1992,6 +1992,7 @@ Valodim/vim-zsh-completion
 vim-airline/vim-airline
 vim-airline/vim-airline-themes
 vim/colorschemes
+vim-crystal/vim-crystal
 vim-jp/autofmt
 vim-jp/vim-go-extra
 vim-jp/vim-sweep_trail
