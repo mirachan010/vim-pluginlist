@@ -1,0 +1,13 @@
+Vim-Tetr1s
+==========
+
+Original version: http://www.vim.org/scripts/script.php?script_id=172
+
+A funny way to get used to VIM's h k l and <Space> key.
+The first (I hope) interactive game inside pure VIM!
+It's a work-in-progress version.
+
+Todo:
+- better random
+- better timing
+- shorter code
