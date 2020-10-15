@@ -215,6 +215,8 @@ godlygeek/netlib
 godlygeek/tabular
 godlygeek/vim-files
 godlygeek/windowlayout
+graywh/vim-colorindent
+graywh/xptemplate-dist
 gryf/dragvisuals
 gryf/wombat256grf
 gyim/dotvim
