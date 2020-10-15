@@ -1142,6 +1142,7 @@ mopp/vim-operator-convert-case
 morhetz/gruvbox
 morhetz/rnavcr
 morhetz/vim-termitr
+mrk21/yaml-vim
 mtth/compile.vim
 mtth/cursorcross.vim
 mtth/locate.vim
