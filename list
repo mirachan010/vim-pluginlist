@@ -992,6 +992,10 @@ mattn/yamada2-vim
 mattn/yamada-vim
 mattn/yapc-asia-timetable-viewer-vim
 mattn/zencoding-vim
+mcchrish/extend-highlight.vim
+mcchrish/info-window.nvim
+mcchrish/nnn.vim
+mcchrish/vim-closer
 mg979/alt-mappings.vim
 mg979/autocomplete-nvim
 mg979/dictmode.vim
