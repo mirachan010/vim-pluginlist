@@ -742,6 +742,8 @@ LeafCage/vim-textobj-quote2
 LeafCage/visiblemarks.vim
 LeafCage/win-shujuukankei.vim
 LeafCage/yankround.vim
+lfv89/vim-foldfocus
+lfv89/vim-interestingwords
 lifepillar/vim8-colorschemes
 lifepillar/vim-cheat40
 lifepillar/vim-colortemplate
