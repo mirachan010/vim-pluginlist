@@ -34,6 +34,9 @@ check(){
     git commit -m "new repos ${NAME}"
     git add ./ReadMe/${NAME}/.
     git commit -m "new readme ${NAME}"
+    bash ./rank.sh>rank
+    git add ./rank
+    git commit -m "update rank files"
 }
 
 makelist(){
