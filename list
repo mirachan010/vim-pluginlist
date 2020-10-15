@@ -77,6 +77,12 @@ antoinemadec/trytravis_repo
 antoinemadec/vim-highlight-groups
 antoinemadec/vim-multiple-cursors
 antoinemadec/vim-verilog-instance
+aperezdc/luabot
+aperezdc/vim-clorex
+aperezdc/vim-elrond
+aperezdc/vim-lift
+aperezdc/vim-lining
+aperezdc/vim-template
 APZelos/blamer.nvim
 APZelos/gitline.vim
 arcticicestudio/nord-vim
