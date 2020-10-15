@@ -185,6 +185,10 @@ dhruvasagar/vim-testify
 dhruvasagar/vim-zoom
 easymotion/vim-easymotion
 elzr/vim-perma
+euclio/gitignore.vim
+euclio/plugin-test
+euclio/vim-nocturne
+euclio/vimrc
 farmergreg/vim-lastplace
 fatih/vim-go
 fatih/vim-hclfmt
