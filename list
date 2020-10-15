@@ -1381,6 +1381,7 @@ othree/scroll3quarter.vim
 othree/tern
 othree/tern_for_vim
 othree/vim-autocomplpop
+pandark/42header.vim
 pangloss/vim-erlang
 pangloss/vim-simplefold
 patstockwell/vim-monokai-tasty
