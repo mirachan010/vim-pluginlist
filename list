@@ -396,6 +396,7 @@ iamcco/smartIM.nvim
 iamcco/sran.nvim
 iamcco/statusline.vim
 iamcco/universal-editorconfig
+Ignotus/cmake-project.vim
 itchyny/calendar.vim
 itchyny/dictionary.vim
 itchyny/landscape.vim
