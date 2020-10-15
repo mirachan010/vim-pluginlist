@@ -88,6 +88,8 @@ Bakudankun/ivi.vim
 Bakudankun/qline.vim
 bdukes/Vim-Config
 c000/rapidfire.vim
+camspiers/animate.vim
+camspiers/lens.vim
 christoomey/ctrlp-generic
 christoomey/gsub.vim
 christoomey/larryville
