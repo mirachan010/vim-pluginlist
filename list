@@ -5649,6 +5649,16 @@ vim-scripts/zoomwintab.vim
 vim-scripts/zshr.vim
 vim-scripts/zzsplash
 vim-syntastic/syntastic
+violetyk/cake3.vim
+violetyk/cake.vim
+violetyk/gitquick.vim
+violetyk/iikanji-markdown.vim
+violetyk/neco-php
+violetyk/neocomplete-php.vim
+violetyk/neosnippet-aws-cloud-formation
+violetyk/neosnippet-rails
+violetyk/vim-phpclass
+violetyk/w.vim
 voldikss/coc-todolist
 voldikss/fzf-floaterm
 voldikss/LeaderF-everything
