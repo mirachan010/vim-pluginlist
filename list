@@ -43,6 +43,7 @@ ajh17/vim-fist
 alok/notational-fzf-vim
 alok/vim-run
 altercation/vim-colors-solarized
+aming/vim-mason
 AndrewRadev/andrews_nerdtree.vim
 AndrewRadev/archivitor.vim
 AndrewRadev/better_netrw.vim
