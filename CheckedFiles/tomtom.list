@@ -7,6 +7,7 @@ checksyntax_vim
 cmdlinehelp_vim
 deplate
 enabler_vim
+evalselection_vim
 foldtext_vim
 gdocs_vim
 hookcursormoved_vim
