@@ -203,6 +203,7 @@ dhruvasagar/vim-testify
 dhruvasagar/vim-zoom
 easymotion/vim-easymotion
 elzr/vim-perma
+erictleung/simplewriter
 euclio/gitignore.vim
 euclio/plugin-test
 euclio/vim-nocturne
