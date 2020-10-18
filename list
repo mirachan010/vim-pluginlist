@@ -1897,6 +1897,7 @@ tomtom/cfilehandler_vim
 tomtom/checksyntax_vim
 tomtom/cmdlinehelp_vim
 tomtom/enabler_vim
+tomtom/evalselection_vim
 tomtom/foldtext_vim
 tomtom/gdocs_vim
 tomtom/hookcursormoved_vim
