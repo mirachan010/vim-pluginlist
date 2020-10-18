@@ -5732,6 +5732,12 @@ wting/dotvim
 wting/gitsessions.vim
 wting/pair_files.vim
 wting/rust.vim
+xaizek/clang_complete
+xaizek/dotvim
+xaizek/preamble.vim
+xaizek/vim-extradite
+xaizek/vim-inccomplete
+xaizek/vim-qthelp
 Xuyuanp/nerdtree-git-plugin
 Xuyuanp/scrollbar.nvim
 Xuyuanp/vimrc
