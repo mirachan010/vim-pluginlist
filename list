@@ -1216,6 +1216,7 @@ neovim/node-host
 neovim/nvimdev.nvim
 neovim/nvim-lspconfig
 neovim/nvim.net
+nfischer/vimignore
 nicolasacquaviva/vim-snipper
 nightsense/carbonized
 nightsense/cosmic_latte
