@@ -1657,6 +1657,9 @@ sainnhe/forest-night
 sainnhe/gruvbox-material
 sainnhe/lightline_foobar.vim
 sainnhe/sonokai
+salsifis/vim-hexsearch
+salsifis/vim-qfmanip
+salsifis/vim-transpose
 scrooloose/code_complete
 scrooloose/nerdcommenter
 scrooloose/nerdsnippets
