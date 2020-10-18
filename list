@@ -1437,6 +1437,11 @@ pocke/vueim
 pocke/whichpr
 pocke/yaml-path.vim
 posva/Rndm
+powerman/dotvim
+powerman/vim-plugin-autosess
+powerman/vim-plugin-fixtermkeys
+powerman/vim-plugin-ruscmd
+powerman/vim-plugin-viewdoc
 prabirshrestha/asyncomplete-buffer.vim
 prabirshrestha/asyncomplete-emmet.vim
 prabirshrestha/asyncomplete-emoji.vim
