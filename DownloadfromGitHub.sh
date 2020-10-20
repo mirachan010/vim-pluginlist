@@ -13,7 +13,6 @@ check_mrepo(){
 }
 
 dl_orepo(){
-    echo "What your GitHubID?"
     read -p  "What your GitHubID?>>" USERNAME
     echo download repositories list
     curl -u ${USERNAME} "https://api.github.com/orgs/${NAME}/repos?per_page=100&page=1">${NAME}_1
