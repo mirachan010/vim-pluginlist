@@ -1506,6 +1506,13 @@ prabirshrestha/vim-fz-extras
 prabirshrestha/vim-lsp
 prabirshrestha/vim-ts
 previm/previm
+PsychoLlama/alternaut.vim
+PsychoLlama/conway.vim
+PsychoLlama/debrief.vim
+PsychoLlama/further.vim
+PsychoLlama/navitron.vim
+PsychoLlama/snake.vim
+PsychoLlama/teleport.vim
 rbtnn/cpp-tile
 rbtnn/vim-bitmap
 rbtnn/vim-buffer
