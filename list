@@ -1293,6 +1293,8 @@ nvim-treesitter/nvim-treesitter
 nvim-treesitter/nvim-treesitter-refactor
 nvim-treesitter/nvim-treesitter-textobjects
 nvim-treesitter/playground
+obcat/tlr.vim
+obcat/vim-hitspop
 osyo-manga/checking-global-variables
 osyo-manga/neocomplcache-jsx
 osyo-manga/neocomplcache-snippets-complete-dart
