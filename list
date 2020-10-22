@@ -365,6 +365,9 @@ higashi000/vim-pludate
 higashi000/vimvimsemi
 high-moctane/asyncomplete-nextword.vim
 high-moctane/gaming.vim
+himanoa/denite-git-grep
+himanoa/goshiteki
+himanoa/ttene.nvim
 honza/dockerfile.vim
 honza/vim-snippets
 honza/writer.vim
