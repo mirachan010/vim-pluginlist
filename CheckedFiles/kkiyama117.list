@@ -21,6 +21,7 @@ innovation_server
 kkiyama117
 Knapsack_problem
 KUEventParser
+lsif-toml
 lsp-async-stub
 metabase-docker
 MVMKR
@@ -42,5 +43,6 @@ serial_dictatorship
 taplo-lsp
 tensorflow
 unimap-base
+vim-lsif
 zenn-vim
 .zsh
