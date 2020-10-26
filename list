@@ -1660,6 +1660,10 @@ romainl/vim-qlist
 romainl/vim-quicklist
 romainl/vim-sweet16
 romainl/vim-tinyMRU
+roman/cabal.vim
+roman/golden-ratio
+roman/rainbow
+roman/vimconfig
 romgrk/AutoComplPop
 romgrk/barbar.nvim
 romgrk/coffee-nvim
