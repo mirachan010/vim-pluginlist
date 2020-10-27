@@ -631,6 +631,7 @@ kana/vim-vspec
 kana/vim-wwwsearch
 kato-k/command-palette.vim
 kato-k/nyancat.vim
+kato-k/vim-colorscheme-settings
 kitagry/asyncomplete-tabnine.vim
 kitagry/vim-gotest
 kitagry/vim-monkey
