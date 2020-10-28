@@ -42,6 +42,10 @@ aiya000/vim-webpage
 ajh17/Spacegray.vim
 ajh17/VimCompletesMe
 ajh17/vim-fist
+akinsho/lightline-statuslinetabs
+akinsho/nvim-bufferline.lua
+akinsho/nvim-toggleterm.lua
+akinsho/oni-theme-night-owl
 alok/notational-fzf-vim
 alok/vim-run
 altercation/vim-colors-solarized
