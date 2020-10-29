@@ -1194,6 +1194,11 @@ morhetz/gruvbox
 morhetz/rnavcr
 morhetz/vim-termitr
 mrk21/yaml-vim
+ms-jpq/chadtree
+ms-jpq/narc
+ms-jpq/narc-snippets
+ms-jpq/narc-t9
+ms-jpq/neovim-async-tutorial
 mtth/compile.vim
 mtth/cursorcross.vim
 mtth/locate.vim
