@@ -1,0 +1,43 @@
+# NARC Snippets
+
+Snippets Clients for [Nvim Async Reactive Complete](https://github.com/ms-jpq/narc)
+
+## Supported Grammars
+
+**100% of:**
+
+- [LSP / VScode](https://github.com/microsoft/language-server-protocol/blob/master/snippetSyntax.md)
+
+**99% of:**
+
+- [Snipmate](https://github.com/honza/vim-snippets)
+
+- [Neosnippet](https://github.com/Shougo/neosnippet.vim)
+
+- [UltiSnips](https://github.com/sirver/UltiSnips)
+
+_by 99%, I mean I will be supporting the grammar which is the (mostly) superset of the S,N,U formats as formally delineated by the [EBNF](https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form) outlined [here](https://github.com/ms-jpq/narc-snippets/blob/narc/rplugin/python3/narc_snippets/parsers/snu.py)_
+
+---
+
+The CI is testing against over 10,000 popular snippets. As of now the pass rate is [`99.69%`](https://github.com/ms-jpq/narc-snippets/actions)
+
+## Features
+
+## Non-Features
+
+- 100% compatibility
+
+  I will only program to the public EBNF specification, not private implementation (which is usually slightly more promiscuous).
+
+- Arbitrary code execution
+
+  Not a good idea?
+
+- Regex (for now)
+
+  Handling regex matches in 3 different languages is PITA. (js/python/viml)
+
+## Install
+
+This repo does not come with any snippets.
