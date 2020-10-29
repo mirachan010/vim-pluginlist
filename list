@@ -1684,6 +1684,7 @@ romgrk/doom-one.vim
 romgrk/equal.operator
 romgrk/github-light.vim
 romgrk/lib.kom
+romgrk/lister
 romgrk/nvim
 romgrk/nvim-treesitter-context
 romgrk/pp.vim
