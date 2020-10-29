@@ -2,6 +2,7 @@ Bencode
 BEND
 bg.workflow
 buzuo.vim
+byte-display
 clock.nvim
 coc-actions
 coc-action-source.nvim
