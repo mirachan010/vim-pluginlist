@@ -1977,6 +1977,7 @@ thinca/vim-winenv
 thinca/vim-wtrans
 thinca/vim-zenspace
 TimUntersberger/deta.nvim
+TimUntersberger/neofs
 TimUntersberger/neogit
 tmsvg/pear-tree
 tomasr/molokai
