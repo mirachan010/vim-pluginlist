@@ -1289,6 +1289,7 @@ NLKNguyen/papercolor-blue
 NLKNguyen/papercolor-theme
 NLKNguyen/pipe-mysql.vim
 NLKNguyen/pipe.vim
+npxbr/galaxyline.nvim
 npxbr/glow.nvim
 npxbr/weather.nvim
 ntpeters/vim-airline-colornum
