@@ -1732,6 +1732,13 @@ RRethy/vim-spotlight
 RRethy/vim-tranquille
 ryanoasis/vim-devicons
 ryanoasis/vim-external-minimap
+ryym/bufswitcher.vim
+ryym/macspeech.vim
+ryym/mapping.vim
+ryym/vim-dbb
+ryym/vim-plugger
+ryym/vim-prets
+ryym/vim-viler
 sainnhe/archived-colors
 sainnhe/artify.vim
 sainnhe/edge
