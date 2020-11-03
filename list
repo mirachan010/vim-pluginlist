@@ -1816,6 +1816,7 @@ skanehira/code2img.vim
 skanehira/docker-compose.vim
 skanehira/docker.vim
 skanehira/generatedir.vim
+skanehira/getpr.vim
 skanehira/gh.vim
 skanehira/google-map.vim
 skanehira/gql.vim
@@ -1823,6 +1824,7 @@ skanehira/jo.vim
 skanehira/popupfiles.vim
 skanehira/popuphelp.vim
 skanehira/preview-markdown.vim
+skanehira/preview-uml.vim
 skanehira/regpop.vim
 skanehira/say.vim
 skanehira/session.vim
