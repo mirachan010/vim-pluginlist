@@ -1,3 +1,4 @@
+2fa-example
 99c
 alonesns
 anko
@@ -51,6 +52,7 @@ consize
 cool-ascii-faces
 cool-peco-windows
 cpeep
+cpod
 cpp-lingrbot
 crow-bbs
 crow-bbs-sqlite3
@@ -88,6 +90,7 @@ ctrlp-vimhelpjp
 ctrlp-vimkaruta
 ctrlp-vimpatches
 ctrlp-windowselector
+ctrlp-yo
 cuiaboutme-vim
 C-win32
 cybozulive-vim
@@ -103,6 +106,7 @@ die-vim
 disableitalic-vim
 ditz-ja
 docker-cmd
+docker-latexmk-wrapper
 docs-php-funcref-in-perl
 docx2md
 dot.emacs.d
@@ -110,6 +114,7 @@ dotfiles
 dotnet-blog
 dotnet-blog-posts
 drawcmd
+duckdb-example
 earthquake
 earthquake-growler
 echo-example
@@ -196,6 +201,7 @@ go-drainclose
 godreader
 go-easyplugin
 go-eject
+go-embed-example
 goemon
 go-encoding
 go-erajp
@@ -394,6 +400,7 @@ jvgrep
 kankeinai-bot
 kimoto-vim
 kinako
+knn-numcpp
 kobita
 kocho
 labo-mattn
@@ -1671,6 +1678,7 @@ wiki-example
 wikigo
 wikipedia-lingrbot
 wiki-work
+win32-utf8-example
 windows-gui-and-perl
 winmove.vim
 winpty-sandbox
