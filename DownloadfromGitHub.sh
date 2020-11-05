@@ -91,5 +91,5 @@ else
     exit
 fi
 if [ -f ./list_new ];then check; fi
-
+sed -e "s/\/.*//" list|sort|uniq>ulist
 echo finish
