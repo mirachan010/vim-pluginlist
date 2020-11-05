@@ -704,6 +704,7 @@ lambdalisue/fern-renderer-nerdfont.vim
 lambdalisue/fern-tabpage.vim
 lambdalisue/fern.vim
 lambdalisue/filta.vim
+lambdalisue/fin-quickfix.vim
 lambdalisue/fin.vim
 lambdalisue/gilt.vim
 lambdalisue/gina-blame.vim
@@ -716,6 +717,7 @@ lambdalisue/lista.vim
 lambdalisue/loupe.vim
 lambdalisue/macra.vim
 lambdalisue/manipulist.vim
+lambdalisue/mr-quickfix.vim
 lambdalisue/mr.vim
 lambdalisue/nerdfont.vim
 lambdalisue/pinkyless.vim
