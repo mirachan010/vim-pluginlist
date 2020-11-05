@@ -76,8 +76,3 @@ Need fzf
 + ./ReadGitHub.sh
 Make pluginlist script  
 Need mattn/my-repositories  
-
-```
-./ReadGitHub.sh -u user
-./ReadGitHub.sh -o orgs
-```
