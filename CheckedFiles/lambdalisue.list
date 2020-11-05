@@ -74,6 +74,7 @@ fern-tabpage.vim
 fern.vim
 fetch-mock-test
 filta.vim
+fin-quickfix.vim
 fin.vim
 firefox-ciipboard
 for-git-investigation
@@ -126,6 +127,7 @@ mdtraj-contrib
 Minilog
 molblend
 Molecalc
+mr-quickfix.vim
 mr.vim
 munin-contrib
 mypy-compiler.vim
