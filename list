@@ -22,6 +22,9 @@ aereal/unite-strftime_format
 aereal/vim-color-japanesque
 aereal/vim-colors-japanesque
 aereal/vim-magica-colors
+aharisu/vim-gdev
+aharisu/vim_goshrepl
+aharisu/vise
 ahf/onion-vim
 airblade/vim-accent
 airblade/vim-gitgutter
