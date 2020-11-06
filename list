@@ -115,6 +115,7 @@ alpaca-tc/vim-endwise
 alpaca-tc/vim-rust
 alpaca-tc/vim-unite-tamago.vim
 alpaca-tc/vim-unite-watson.vim
+alpertuna/vim-header
 altercation/vim-colors-solarized
 aming/vim-mason
 AndrewRadev/andrews_nerdtree.vim
