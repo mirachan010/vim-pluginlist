@@ -281,6 +281,8 @@ AtsushiSakai/bookmarklet.vim
 AtsushiSakai/comfortablecpp.vim
 AtsushiSakai/julia.vim
 autozimu/LanguageClient-neovim
+auwsmit/vim-active-numbers
+auwsmit/vim-hydra
 a/vim-snippets
 a/vim-trash-polka
 Bakudankun/BackAndForward.vim
