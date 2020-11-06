@@ -1,0 +1,53 @@
+# Description
+
+Vim plugin for manipulating FASTA file contents.
+
+I am working on this plugin so its functionality may grow, or it may stagnate.
+Who knows.
+
+The only functionality so far are the commands `:FastaReverseComplement` and
+`:FastaSearch`.  The former reverse complements the nucleotides in the
+specified line range (or the current line if no range is specified), and the
+latter can be used to search for sequences (e.g. `AAgNnwcR`).
+
+All functionality is aware of the IUPAC nucleotide code set:
+
+    A      Adenine
+    C      Cytosine
+    G      Guanine
+    T      Thymine
+    R      A or G
+    Y      C or T
+    S      G or C
+    W      A or T
+    K      G or T
+    M      A or C
+    B      C or G or T
+    D      A or G or T
+    H      A or C or T
+    V      A or C or G
+    N      any base
+
+
+
+# Installation
+
+Assuming you are using the [Pathogen plugin][pathogen], just clone this
+repository in your `~/.vim/bundle` folder like so:
+
+```
+$ cd ~/.vim/bundle
+$ git clone https://github.com/b4winckler/vim-fasta.git
+```
+
+Alternatively, you can just put the [`fasta.vim` script][plugin] in your
+`~/.vim/plugin` folder (create the folder if it does not already exist).
+
+
+# License
+
+Copyright 2014 Björn Winckler.  Distributed under the same license as Vim
+itself.  See `:h license`.
+
+[plugin]: https://github.com/b4winckler/vim-fasta/blob/master/plugin/fasta.vim
+[pathogen]: https://github.com/tpope/vim-pathogen
