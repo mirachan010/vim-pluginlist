@@ -190,6 +190,17 @@ antoinemadec/trytravis_repo
 antoinemadec/vim-highlight-groups
 antoinemadec/vim-multiple-cursors
 antoinemadec/vim-verilog-instance
+anyakichi/vim-autoclose
+anyakichi/vim-circomp
+anyakichi/vim-csutil
+anyakichi/vim-histsearch
+anyakichi/vim-ocp-index
+anyakichi/vim-qfutil
+anyakichi/vim-tabutil
+anyakichi/vim-textobj-ifdef
+anyakichi/vim-textobj-kakko
+anyakichi/vim-textobj-subword
+anyakichi/vim-textobj-xbrackets
 aperezdc/luabot
 aperezdc/vim-clorex
 aperezdc/vim-elrond
