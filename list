@@ -124,6 +124,8 @@ alvan/vim-closetag
 alvan/vim-dicts
 alvan/vim-indexer
 alvan/vim-php-manual
+amdt/sunset
+amdt/vim-niji
 aming/vim-mason
 AndrewRadev/andrews_nerdtree.vim
 AndrewRadev/archivitor.vim
