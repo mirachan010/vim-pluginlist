@@ -117,6 +117,13 @@ alpaca-tc/vim-unite-tamago.vim
 alpaca-tc/vim-unite-watson.vim
 alpertuna/vim-header
 altercation/vim-colors-solarized
+alvan/vim
+alvan/vim-acomment
+alvan/vim-assistant
+alvan/vim-closetag
+alvan/vim-dicts
+alvan/vim-indexer
+alvan/vim-php-manual
 aming/vim-mason
 AndrewRadev/andrews_nerdtree.vim
 AndrewRadev/archivitor.vim
