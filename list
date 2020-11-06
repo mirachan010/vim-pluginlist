@@ -64,6 +64,12 @@ akinsho/oni-theme-night-owl
 akiyan/vim-textobj-erb
 akiyan/vim-textobj-php
 akiyan/vim-textobj-xml-attribute
+aklt/dirconf.vim
+aklt/rel.vim
+aklt/vim-line_length
+aklt/vim-simple_comments
+aklt/vim-substitute
+aklt/vim-switch
 alok/notational-fzf-vim
 alok/vim-run
 altercation/vim-colors-solarized
