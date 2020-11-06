@@ -61,6 +61,9 @@ akinsho/lightline-statuslinetabs
 akinsho/nvim-bufferline.lua
 akinsho/nvim-toggleterm.lua
 akinsho/oni-theme-night-owl
+akiyan/vim-textobj-erb
+akiyan/vim-textobj-php
+akiyan/vim-textobj-xml-attribute
 alok/notational-fzf-vim
 alok/vim-run
 altercation/vim-colors-solarized
