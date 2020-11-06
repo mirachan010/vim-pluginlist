@@ -277,6 +277,9 @@ AtsushiM/thread.vim
 AtsushiM/today-first.vim
 AtsushiM/total-minifier.vim
 AtsushiM/Vake.vim
+AtsushiSakai/bookmarklet.vim
+AtsushiSakai/comfortablecpp.vim
+AtsushiSakai/julia.vim
 autozimu/LanguageClient-neovim
 a/vim-snippets
 a/vim-trash-polka
