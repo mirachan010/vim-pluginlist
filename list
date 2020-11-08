@@ -353,6 +353,9 @@ basyura/wwwrefe.vim
 bazelbuild/vim-bazel
 bchretien/BlackPearlConky
 bdukes/Vim-Config
+beloglazov/vim-online-thesaurus
+beloglazov/vim-textobj-punctuation
+beloglazov/vim-textobj-quotes
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
