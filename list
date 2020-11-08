@@ -350,6 +350,7 @@ basyura/util.vim
 basyura/vimfiles
 basyura/vimshell-sls
 basyura/wwwrefe.vim
+bazelbuild/vim-bazel
 bdukes/Vim-Config
 c000/rapidfire.vim
 camspiers/animate.vim
