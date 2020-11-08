@@ -357,6 +357,12 @@ beloglazov/vim-online-thesaurus
 beloglazov/vim-textobj-punctuation
 beloglazov/vim-textobj-quotes
 benjaminwhite/Benokai
+benmills/vim-braintree
+benmills/vim-commadown
+benmills/vim-golang-alternate
+benmills/vimux
+benmills/vimux-golang
+benmills/vimux-nose-test
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
