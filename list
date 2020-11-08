@@ -380,6 +380,11 @@ bfredl/nvim-x11
 bfredl/nvim-yanklist
 bfredl/unite-actmngr
 bfredl/vim-argclinic
+bigfish/js-taglist
+bigfish/myvim
+bigfish/neovim-eslint
+bigfish/vim4js
+bigfish/vim-js-context-coloring
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
