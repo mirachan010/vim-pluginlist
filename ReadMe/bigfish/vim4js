@@ -1,0 +1,80 @@
+
+# Vim4JS -- Vim for Javascript
+
+A collection of plugins, and settings for effective Javascript editing in Vim.
+
+## Requirements
+
+### [nodelint](https://github.com/tav/nodelint)
+
+Installation (after Node.js, and NPM have been installed):
+
+    sudo npm install -g nodelint@0.5.2
+
+### [vim-nodelint](https://github.com/bigfish/vim-nodelint)
+
+This is a separate vim compiler plugin I wrote.
+I recommend you use pathogen to install this into your bundle/ directory.
+Or you can install it manually.
+
+## Features
+
+### Filetype settings
+
+Included in `after/ftplugin/javascript.vim`.
+
+Sets tabwidth to 4, and always expands tabs to spaces. 
+
+Also adds a couple of keymaps (in .js files only): 
+  
+  - Shift + Enter  --> addds semicolon to end of line
+  - Ctrl + Shift + Enter --> adds a comma at the end of the line
+
+Also sets the compiler to 'nodelint' (uses the vim-nodelint plugin)
+
+### Better Javascript Syntax
+
+Includes [this javascript syntax](http://www.vim.org/scripts/script.php?script_id=1491),
+with a minor tweak to allow folding on {} and [] blocks, as well as functions. use 'zc' to close,
+and 'zo' to open folds.
+
+### Indentation
+
+Includes the [web-indent](http://www.vim.org/scripts/script.php?script_id=3081) plugin.
+
+This allows you to use the builtin indent commands (essentially '=' in command mode,
+combined with a motion, eg. 'gg=G' for the whole file, or just select some text
+in visual mode and hit '=').
+
+### JSON Support
+
+The filetype settings apply the same settings to JSON as Javascript, meaning that you can
+
+* run jslint on the JSON on save
+* fold on {}, [] 
+* do indenting using =
+
+Note that the jslint is JSON specific: it knows the content is JSON and will enforce JSON-isms, like requiring
+double-quoted keys.
+
+### JS-Taglist (optional addon)
+
+Not included, but recommended, are my customized versions of exuberant-ctags, and taglist:
+
+* [ctags_actionscript](git@github.com:bigfish/ctags_actionscript.git)
+* [js-taglist](git@github.com:bigfish/js-taglist.git)
+
+To install, clone the ctags_actionscript repo somewhere (not in your vim bundle dir), cd into it, and do:
+
+    ./configure
+    make
+    sudo make install
+
+Then clone the js-taglist repo into your vim bundle dir (if using pathogen), or copy the plugin.
+
+In my .vimrc I have
+
+    nnoremap <silent><A-t> :TlistToggle<CR>
+
+Which will open/close the taglist.
+
