@@ -390,6 +390,9 @@ bitc/lushtags
 bitc/vim-bad-whitespace
 bitc/vim-better-make
 bitc/vim-hdevtools
+bkad/CamelCaseMotion
+bkad/nvimconfig
+bkad/vimconfig
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
