@@ -393,6 +393,10 @@ bitc/vim-hdevtools
 bkad/CamelCaseMotion
 bkad/nvimconfig
 bkad/vimconfig
+bling/dotvim
+bling/minivimrc
+bling/vim-airline
+bling/vim-bufferline
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
