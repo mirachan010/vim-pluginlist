@@ -397,6 +397,15 @@ bling/dotvim
 bling/minivimrc
 bling/vim-airline
 bling/vim-bufferline
+blueyed/deoplete-jedi
+blueyed/golden-ratio
+blueyed/jedi-vim
+blueyed/nvimdev.nvim
+blueyed/vader.vim
+blueyed/vim-diminactive
+blueyed/vim-qf_resize
+blueyed/vim-smartinclude
+blueyed/vim-tmux-navigator
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
