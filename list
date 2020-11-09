@@ -409,6 +409,8 @@ blueyed/vim-tmux-navigator
 bluntpeak/bluntpeak-vim-colors
 bluntpeak/vim-config
 boucherm/ShowMotion
+bps/vim-textobj-python
+bps/vim-tshark
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
