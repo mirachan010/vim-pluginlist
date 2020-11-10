@@ -412,6 +412,13 @@ boucherm/ShowMotion
 bps/vim-textobj-python
 bps/vim-tshark
 briandoll/change-inside-surroundings.vim
+bronson/vim-closebuffer
+bronson/vim-ruby-block-conv
+bronson/vim-runtest
+bronson/vimsy
+bronson/vim-toggle-wrap
+bronson/vim-trailing-whitespace
+bronson/vim-visual-star-search
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
