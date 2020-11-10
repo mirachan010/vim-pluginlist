@@ -419,6 +419,7 @@ bronson/vimsy
 bronson/vim-toggle-wrap
 bronson/vim-trailing-whitespace
 bronson/vim-visual-star-search
+bronzehedwick/vim-primary-terminal
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
