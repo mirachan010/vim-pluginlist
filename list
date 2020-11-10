@@ -420,6 +420,12 @@ bronson/vim-toggle-wrap
 bronson/vim-trailing-whitespace
 bronson/vim-visual-star-search
 bronzehedwick/vim-primary-terminal
+brookhong/cloudboard.vim
+brookhong/cscope.vim
+brookhong/DBGPavim
+brookhong/jdb.vim
+brookhong/k.vim
+brookhong/vimfiles
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
