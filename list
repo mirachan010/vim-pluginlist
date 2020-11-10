@@ -411,6 +411,7 @@ bluntpeak/vim-config
 boucherm/ShowMotion
 bps/vim-textobj-python
 bps/vim-tshark
+briandoll/change-inside-surroundings.vim
 c000/rapidfire.vim
 camspiers/animate.vim
 camspiers/lens.vim
