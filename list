@@ -466,6 +466,10 @@ captbaritone/sadtrombone.vim
 captbaritone/vim-vigilant
 carlitux/deoplete-flow
 carlitux/deoplete-ternjs
+cespare/vim-bclose
+cespare/vim-config
+cespare/vim-sbd
+cespare/vjde
 christoomey/ctrlp-generic
 christoomey/gsub.vim
 christoomey/larryville
