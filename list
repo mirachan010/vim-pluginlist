@@ -457,6 +457,7 @@ c9s/vikube.vim
 c9s/vim-dev-plugin
 c9s/winctl.vim
 c9s/zhwrap.vim
+cabin/cabin-colorscheme
 camspiers/animate.vim
 camspiers/lens.vim
 christoomey/ctrlp-generic
