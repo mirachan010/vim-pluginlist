@@ -470,6 +470,12 @@ cespare/vim-bclose
 cespare/vim-config
 cespare/vim-sbd
 cespare/vjde
+chaoren/vim-hex
+chaoren/vim-imageview
+chaoren/vim-resizewindow
+chaoren/vim-smartexpandtab
+chaoren/vim-unmatchedbracket
+chaoren/vim-wordmotion
 christoomey/ctrlp-generic
 christoomey/gsub.vim
 christoomey/larryville
