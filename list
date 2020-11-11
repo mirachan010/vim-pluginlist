@@ -464,6 +464,8 @@ captbaritone/intro-to-vim
 captbaritone/repo-vimrc
 captbaritone/sadtrombone.vim
 captbaritone/vim-vigilant
+carlitux/deoplete-flow
+carlitux/deoplete-ternjs
 christoomey/ctrlp-generic
 christoomey/gsub.vim
 christoomey/larryville
