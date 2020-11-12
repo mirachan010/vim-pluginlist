@@ -507,6 +507,8 @@ chemzqm/vim-macos
 chemzqm/vim-run
 chemzqm/vim-v2ex
 chemzqm/wxapp.vim
+Chiel92/vim-autoformat
+Chiel92/vim-fate
 christoomey/ctrlp-generic
 christoomey/gsub.vim
 christoomey/larryville
