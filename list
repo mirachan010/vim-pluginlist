@@ -476,6 +476,9 @@ chaoren/vim-resizewindow
 chaoren/vim-smartexpandtab
 chaoren/vim-unmatchedbracket
 chaoren/vim-wordmotion
+chase/focuspoint-powerline-vim
+chase/focuspoint-vim
+chase/vim-airline-focuspoint
 christoomey/ctrlp-generic
 christoomey/gsub.vim
 christoomey/larryville
