@@ -479,6 +479,10 @@ chaoren/vim-wordmotion
 chase/focuspoint-powerline-vim
 chase/focuspoint-vim
 chase/vim-airline-focuspoint
+chazy/cscope_maps
+chazy/dirsettings
+chazy/vim-latex
+chazy/vim-stgit
 christoomey/ctrlp-generic
 christoomey/gsub.vim
 christoomey/larryville
