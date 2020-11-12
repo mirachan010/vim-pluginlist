@@ -541,6 +541,8 @@ chrisbra/vim-show-char
 chrisbra/vim-xml-runtime
 chrisbra/vpager
 chrisbra/xmlformat
+chriskempson/base16-vim
+chriskempson/vim-tomorrow-theme
 christoomey/ctrlp-generic
 christoomey/gsub.vim
 christoomey/larryville
