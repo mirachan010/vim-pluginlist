@@ -509,6 +509,7 @@ chemzqm/vim-v2ex
 chemzqm/wxapp.vim
 Chiel92/vim-autoformat
 Chiel92/vim-fate
+chiphogg/vim-vtd
 chip/.vim
 chip/vim-fat-finger
 christoomey/ctrlp-generic
