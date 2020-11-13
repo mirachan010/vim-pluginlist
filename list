@@ -561,6 +561,9 @@ christoomey/vim-textobj-codeblock
 christoomey/vim-titlecase
 christoomey/vim-tmux-navigator
 christoomey/vim-tmux-runner
+ciaranm/detectindent
+ciaranm/inkpot
+ciaranm/securemodelines
 cocopon/bundle-preset.vim
 cocopon/colorswatch.vim
 cocopon/googkit.vim
