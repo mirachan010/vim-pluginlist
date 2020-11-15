@@ -604,6 +604,10 @@ cormacrelf/vim-colors-github
 critiqjo/lldb.nvim
 critiqjo/unite-fasd.vim
 critiqjo/vsearch.vim
+crusoexia/gtk2-vim-zoom
+crusoexia/vim-dracula
+crusoexia/vim-dream
+crusoexia/vim-monokai
 ctjhoa/miro8
 ctjhoa/spacevim
 ctrlpvim/ctrlp.vim
