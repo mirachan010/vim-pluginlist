@@ -601,6 +601,9 @@ ConradIrwin/vim-bracketed-paste
 ConradIrwin/vim-comment-object
 cormacrelf/fuzzy-projectionist.vim
 cormacrelf/vim-colors-github
+critiqjo/lldb.nvim
+critiqjo/unite-fasd.vim
+critiqjo/vsearch.vim
 ctjhoa/miro8
 ctjhoa/spacevim
 ctrlpvim/ctrlp.vim
