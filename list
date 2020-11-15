@@ -584,6 +584,8 @@ cocopon/snapbuffer.vim
 cocopon/svss.vim
 cocopon/todo.vim
 cocopon/vaffle.vim
+coderifous/textobj-word-column.vim
+coderifous/working-set.vim
 codota/tabnine-vim
 cohama/agit.vim
 cohama/easy-colorcolumn
