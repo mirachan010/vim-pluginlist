@@ -595,6 +595,10 @@ cohama/.vim
 cohama/vim-insert-linenr
 cohama/vim-smartinput-endwise
 cohama/vim-themis-helper-expect
+ConradIrwin/go-for-rubyists
+ConradIrwin/repl-driven-development
+ConradIrwin/vim-bracketed-paste
+ConradIrwin/vim-comment-object
 cormacrelf/fuzzy-projectionist.vim
 cormacrelf/vim-colors-github
 ctjhoa/miro8
