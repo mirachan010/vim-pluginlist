@@ -613,6 +613,11 @@ cseelus/vim-colors-icicle
 cseelus/vim-colors-lanai
 cseelus/vim-colors-lucid
 cseelus/vim-colors-tone
+csexton/jekyll.vim
+csexton/rvm.vim
+csexton/spacemanspiff.vim
+csexton/trailertrash.vim
+csexton/viceroy
 ctjhoa/miro8
 ctjhoa/spacevim
 ctrlpvim/ctrlp.vim
