@@ -621,6 +621,12 @@ csexton/viceroy
 ctjhoa/miro8
 ctjhoa/spacevim
 ctrlpvim/ctrlp.vim
+dag/.vim
+dag/vim2hs
+dag/vim-cabal
+dag/vim-fish
+dag/vim-hare
+dag/vim-haskell
 davidoc/taskpaper.vim
 davidoc/todo.txt-vim
 dense-analysis/ale
