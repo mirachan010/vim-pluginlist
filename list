@@ -712,6 +712,7 @@ dahu/vim-whitelines
 dahu/vim-wtf
 dahu/vim-zebra
 dahu/zombies_versus_unicorns
+DanielFGray/DistractionFree.vim
 davidoc/taskpaper.vim
 davidoc/todo.txt-vim
 dense-analysis/ale
