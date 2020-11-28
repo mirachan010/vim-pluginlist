@@ -1,0 +1,1 @@
+# neovim-js-go-to-declaration
