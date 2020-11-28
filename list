@@ -728,6 +728,10 @@ DataWraith/auto_mkdir
 davidhalter/jedi-vim
 davidoc/taskpaper.vim
 davidoc/todo.txt-vim
+davidsu/mru.vim
+davidsu/mysql-mru.vim
+davidsu/neovim-js-go-to-declaration
+davidsu/vim-js-goToDeclaration
 dense-analysis/ale
 deris/columnjump
 deris/parajump
