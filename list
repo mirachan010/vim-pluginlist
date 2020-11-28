@@ -732,6 +732,14 @@ davidsu/mru.vim
 davidsu/mysql-mru.vim
 davidsu/neovim-js-go-to-declaration
 davidsu/vim-js-goToDeclaration
+dbakker/vim-adjustscroll
+dbakker/vimfiles
+dbakker/vim-holmes
+dbakker/vim-indent
+dbakker/vim-paragraph-motion
+dbakker/vim-projectroot
+dbakker/vim-rstlink
+dbakker/vim-sparkup
 dense-analysis/ale
 deris/columnjump
 deris/parajump
