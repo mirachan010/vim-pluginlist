@@ -718,6 +718,12 @@ dannyob/quickfixstatus
 danro/rename.vim
 dansomething/vim-eclim
 dansomething/vim-hackernews
+dan-t/vim-cpp-include
+dan-t/vim-cpp-typecheck
+dan-t/vim-fn
+dan-t/vim-hoogle
+dan-t/vim-hsimport
+dan-t/vim-lvimrc
 davidoc/taskpaper.vim
 davidoc/todo.txt-vim
 dense-analysis/ale
