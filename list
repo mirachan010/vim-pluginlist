@@ -724,6 +724,7 @@ dan-t/vim-fn
 dan-t/vim-hoogle
 dan-t/vim-hsimport
 dan-t/vim-lvimrc
+DataWraith/auto_mkdir
 davidoc/taskpaper.vim
 davidoc/todo.txt-vim
 dense-analysis/ale
