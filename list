@@ -716,6 +716,8 @@ DanielFGray/DistractionFree.vim
 dannyob/google-diff-match-patch
 dannyob/quickfixstatus
 danro/rename.vim
+dansomething/vim-eclim
+dansomething/vim-hackernews
 davidoc/taskpaper.vim
 davidoc/todo.txt-vim
 dense-analysis/ale
