@@ -740,6 +740,7 @@ dbakker/vim-paragraph-motion
 dbakker/vim-projectroot
 dbakker/vim-rstlink
 dbakker/vim-sparkup
+dbb/vim-gummybears-colorscheme
 dense-analysis/ale
 deris/columnjump
 deris/parajump
