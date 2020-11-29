@@ -8,12 +8,12 @@ use dein.vim
 ```toml
 [[plugins]]
 repo = 'mirachan010/vim-denite-plugins'
-depentds = ['denite.nvim']
+depends = ['denite.nvim']
 on_source = ['denite.nvim']
 
 [[plugins]]
 repo = 'mirachan010/vim-pluginlist'
-depentds = ['denite.nvim']
+depends = ['denite.nvim']
 on_source = ['vim-denite-plugins']
 ```
 
@@ -23,7 +23,10 @@ if you do_action in denite.
 This plugin make ~/list.toml and write plugin name.
 
 ## option
-default path is ~/list.toml
-```
-g:install_plugin_list="path to tomlfiles"
+```vim
+"default path is ~/list.toml
+let g:install_plugin_list="path to tomlfiles"
+
+"if you installed skanehira/gh.vim you can use.
+let g:pluginlist_use_gh=1 "default 0
 ```
