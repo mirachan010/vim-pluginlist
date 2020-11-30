@@ -1,0 +1,15 @@
+configs
+dotfiles
+openstack-create-instance-example
+openstack-instance-list
+openstack-projects-sync
+scripts
+utils
+vim.config
+vim-lightline-lcn
+vim-lightline-whitespace
+vim-loupe
+vim-onedark
+vim-scalpel
+vim-terminus
+zsh.config
