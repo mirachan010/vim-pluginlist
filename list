@@ -742,6 +742,13 @@ dbakker/vim-rstlink
 dbakker/vim-sparkup
 dbb/vim-gummybears-colorscheme
 dense-analysis/ale
+deponian/vim.config
+deponian/vim-lightline-lcn
+deponian/vim-lightline-whitespace
+deponian/vim-loupe
+deponian/vim-onedark
+deponian/vim-scalpel
+deponian/vim-terminus
 deris/columnjump
 deris/parajump
 deris/vim-cmdline-switch
