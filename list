@@ -749,6 +749,11 @@ deponian/vim-loupe
 deponian/vim-onedark
 deponian/vim-scalpel
 deponian/vim-terminus
+derekwyatt/vim-config
+derekwyatt/vim-fswitch
+derekwyatt/vim-metafuz
+derekwyatt/vim-protodef
+derekwyatt/vim-scala
 deris/columnjump
 deris/parajump
 deris/vim-cmdline-switch
