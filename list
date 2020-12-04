@@ -803,6 +803,9 @@ dhruvasagar/vim-prosession
 dhruvasagar/vim-table-mode
 dhruvasagar/vim-testify
 dhruvasagar/vim-zoom
+dkarter/backpack
+dkarter/bullets.vim
+dkarter/sniphelpers.vim
 easymotion/vim-easymotion
 elzr/vim-perma
 erictleung/simplewriter
