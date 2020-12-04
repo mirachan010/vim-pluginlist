@@ -807,6 +807,7 @@ dkarter/backpack
 dkarter/bullets.vim
 dkarter/sniphelpers.vim
 dkprice/vim-easygrep
+dmdque/cubetime.vim
 easymotion/vim-easymotion
 elzr/vim-perma
 erictleung/simplewriter
