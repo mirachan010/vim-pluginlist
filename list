@@ -806,6 +806,7 @@ dhruvasagar/vim-zoom
 dkarter/backpack
 dkarter/bullets.vim
 dkarter/sniphelpers.vim
+dkprice/vim-easygrep
 easymotion/vim-easymotion
 elzr/vim-perma
 erictleung/simplewriter
