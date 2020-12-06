@@ -808,6 +808,10 @@ dkarter/bullets.vim
 dkarter/sniphelpers.vim
 dkprice/vim-easygrep
 dmdque/cubetime.vim
+dstein64/vim-menu
+dstein64/vim-smile
+dstein64/vim-startuptime
+dstein64/vim-win
 easymotion/vim-easymotion
 elzr/vim-perma
 erictleung/simplewriter
