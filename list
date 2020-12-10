@@ -812,6 +812,14 @@ dstein64/vim-menu
 dstein64/vim-smile
 dstein64/vim-startuptime
 dstein64/vim-win
+dsummersl/dotvim
+dsummersl/lookupfile-grep
+dsummersl/nvim-sluice
+dsummersl/svntools
+dsummersl/vim-sluice
+dsummersl/vimunit
+dsummersl/vim-utf2ascii
+dsummersl/vus
 easymotion/vim-easymotion
 elzr/vim-perma
 erictleung/simplewriter
