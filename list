@@ -2393,6 +2393,8 @@ sheerun/vim-polyglot
 sheerun/vimrc
 sheerun/vim-wombat-scheme
 Shougo/context_filetype.vim
+Shougo/ddc-nvim-lsp
+Shougo/ddc.vim
 Shougo/defx.nvim
 Shougo/dein.vim
 Shougo/denite.nvim
