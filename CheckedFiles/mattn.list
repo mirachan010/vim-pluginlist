@@ -44,6 +44,7 @@ cl-fib
 clj-ezoe
 clj-gntp
 clojure-lingrbot
+cloudflare-pages-example
 codebox
 codepad-vim
 coffee-script-v8
@@ -101,6 +102,7 @@ dedup
 deeeet-bot
 DeskList
 devel-bindpp
+dev_hid_go_iferr
 dictc
 die-vim
 disableitalic-vim
@@ -117,6 +119,7 @@ drawcmd
 duckdb-example
 earthquake
 earthquake-growler
+echo-ent-example
 echo-example
 echo-livereload
 echo-scaffold
@@ -165,6 +168,7 @@ genpw
 genshijin
 getsid-vim
 getwild
+gh-ost
 ght
 ginger-vim
 GitBat
@@ -212,6 +216,7 @@ go-favstar
 go-forlines
 go-fuzzy
 go-generics
+go-generics-example
 go-getopt
 go-gimei
 go-glxgears
@@ -224,6 +229,7 @@ go-helloworld
 go-ieproxy
 go-ipmsg
 go-isatty
+go-iseven
 goissue
 go-isucon2
 go-itdb
@@ -231,11 +237,14 @@ goji-wiki
 go-jmardb
 go-jsonpointer
 go-jsonwire
+go-jupyter
 go-kmeans-iris
 go-knn-iris
 golang_herokubot
 golang-wasm-example
 gol-cmd
+go-leaves-example
+golgi-fizzbuzz
 go-libvterm
 go-lingr
 go-lingrbot
@@ -283,6 +292,7 @@ go-plotlib
 go-plusplusbot
 go-pointer
 go-precure
+go-prisma-example
 go-pubsub
 goravis
 gorecast
@@ -294,11 +304,13 @@ gorgonia-cfd5423e2acc2f8c2b86
 gorgonia-fizzbuzz
 gorgonia.github.io
 gorgonia-iris
+gorillavim-16-livecoding
 go-riot-example
 go-rl
 gortune
 go-runewidth
 go-run-example
+go-santacypher
 go-scan
 go-scripting-sed
 go-session-manager
@@ -310,6 +322,7 @@ go-sion
 go-sixel
 go-sizedwriter
 go-skkdic
+go-sklearn-example
 go-slim
 go-soundplayer
 gospel
@@ -341,6 +354,7 @@ gover
 goveralls
 go-vue-example
 go-w2v
+gowasmer
 go-webkit
 go-webserver-benchmark
 go-xmlrpc
@@ -385,6 +399,8 @@ iputil
 iraq-reports
 iraq-reports-downloader
 isokaze_shutdown_bot
+issue46867
+issue46867foo
 isutf8
 itunes-search-api
 javalin-todoapp
@@ -425,6 +441,7 @@ lleval-vim
 locale-string.c
 localtime2038
 logistic-regression-numcpp
+logistic-regression-xtensor
 longcat
 lorem
 lsdgrep
@@ -532,6 +549,7 @@ mattn/davfs
 mattn/dboxpaper
 mattn/dedup
 mattn/deeeet-bot
+mattn.deno.dev
 mattn/DeskList
 mattn/devel-bindpp
 mattn/dictc
@@ -986,6 +1004,7 @@ mattn/p6-gyazo
 mattn/p6-HTTP-Server-Tiny
 mattn/p6-Path-Canonical
 mattn/p6-Raw-Socket
+mattn.pages.dev
 mattn/pastebin-vim
 mattn/pastepng
 mattn/pasteubuntu-vim
@@ -1085,8 +1104,8 @@ mattn/tinytinyhttpd
 mattn/tinyxmlrpc
 mattn/today-lingrbot
 mattn/todaysfortune-vim
-mattn/todo
 mattn/to-do
+mattn/todo
 mattn/todoly
 mattn/togetter-vim
 mattn/togglecolorscheme-vim
@@ -1280,6 +1299,7 @@ mattn/zencoding-vim
 mattn/zinc-launcher
 maven-jaxrs-jpa-example
 maven-search
+md-footer
 memcachedclient
 memcached-vim
 memo
@@ -1291,6 +1311,7 @@ mispipe
 mkdpreview-vim
 mkup
 mlnet-iris
+moblog
 mod_aaencode
 modelgen
 modelinefenc-vim
@@ -1423,6 +1444,7 @@ play-anko.appspot.com
 plugins-update-vim
 pocoo-vim
 postgres-lingrbot
+pqssh
 psutil
 pureirc-vim
 qfixhowm
@@ -1462,6 +1484,7 @@ skkdict.vim
 skk.vim
 slck
 slurp
+smartcore-example
 smartreply_bot
 sonydb
 sorter
@@ -1492,6 +1515,7 @@ tablist-vim
 tate
 TatsumakiSenpukyaku
 tenkigirls-lingrbot
+tensorflow-inference-in-c
 termtter
 Test-TCP
 tflite-sin
@@ -1501,8 +1525,8 @@ tinytinyhttpd
 tinyxmlrpc
 today-lingrbot
 todaysfortune-vim
-todo
 to-do
+todo
 todoly
 togetter-vim
 togglecolorscheme-vim
@@ -1538,6 +1562,8 @@ unite-rhythmbox
 unite-source-projectfiles
 unite-source-simplenote
 unite-vim_advent-calendar
+unixexec
+unko.deno.dev
 unko.ga
 unubo-app
 uq
@@ -1574,6 +1600,7 @@ vim-go-fizzbuzz
 vim-goimpl
 vim-goimports
 vimgolfer-vim
+vim-gomod
 vimgon-quest-menu
 vim-gorename
 vim-gorun
@@ -1597,6 +1624,7 @@ vim-lsp-icons
 vim-lsp-settings
 vim-main-branch-example
 vim-maketable
+vim-markov
 vim-mastodon
 vim-metarw-etcd
 vim-metarw-gdrive
@@ -1616,6 +1644,7 @@ vim-particle
 vim-pixela
 vimplenote-vim
 vim-prompter
+vim-qfnavigate
 vim-quickrunex
 vim-quickrun-mingw_python_sucks
 vim-quickrun-switcher
@@ -1638,12 +1667,14 @@ vim-tanakh
 vim-terminal
 vim-textobj-cell
 vim-textobj-url
+vim-treesitter
 vim-trex
 vim-trump
 vimtweak
 vimuar
 vimunball
 vim-usa_president_2016
+vim-usa_president_2020
 vim-vfs
 vim-vgo
 vim-vimstreamer
@@ -1679,6 +1710,8 @@ wikigo
 wikipedia-lingrbot
 wiki-work
 win32-utf8-example
+windows-getcmd
+windows-getcwd
 windows-gui-and-perl
 winmove.vim
 winpty-sandbox
