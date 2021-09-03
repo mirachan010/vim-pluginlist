@@ -1686,6 +1686,7 @@ mattn/vim-lsp-icons
 mattn/vim-lsp-settings
 mattn/vim-main-branch-example
 mattn/vim-maketable
+mattn/vim-markov
 mattn/vim-mastodon
 mattn/vim-metarw-etcd
 mattn/vim-metarw-gdrive
@@ -1704,6 +1705,7 @@ mattn/vim-particle
 mattn/vim-pixela
 mattn/vimplenote-vim
 mattn/vim-prompter
+mattn/vim-qfnavigate
 mattn/vim-quickrunex
 mattn/vim-quickrun-mingw_python_sucks
 mattn/vim-quickrun-switcher
@@ -1722,10 +1724,12 @@ mattn/vim-tanakh
 mattn/vim-terminal
 mattn/vim-textobj-cell
 mattn/vim-textobj-url
+mattn/vim-treesitter
 mattn/vim-trex
 mattn/vim-trump
 mattn/vimtweak
 mattn/vim-usa_president_2016
+mattn/vim-usa_president_2020
 mattn/vim-vimstreamer
 mattn/vim-vsopen
 mattn/vim-webapp
@@ -3891,8 +3895,8 @@ vim-scripts/FormatBlock
 vim-scripts/FormatComment.vim
 vim-scripts/Format-Helper
 vim-scripts/FormatToWidth
-vim-scripts/formatvim
 vim-scripts/format.vim
+vim-scripts/formatvim
 vim-scripts/forms
 vim-scripts/forneus
 vim-scripts/fortran_line_length
@@ -4240,8 +4244,8 @@ vim-scripts/Join
 vim-scripts/Join.vim
 vim-scripts/journal.vim
 vim-scripts/joy
-vim-scripts/jsbeautify
 vim-scripts/_jsbeautify
+vim-scripts/jsbeautify
 vim-scripts/jshint2.vim
 vim-scripts/jshint.vim
 vim-scripts/jshint.vim--Stelmach
@@ -4288,8 +4292,8 @@ vim-scripts/LargeFile
 vim-scripts/larlet.vim
 vim-scripts/last256
 vim-scripts/LastBuf.vim
-vim-scripts/lastchange
 vim-scripts/last_change
+vim-scripts/lastchange
 vim-scripts/last_change-B
 vim-scripts/lastchange.vim
 vim-scripts/lastchange.vim--Adams
@@ -4981,8 +4985,8 @@ vim-scripts/Quicksilver.vim
 vim-scripts/QuickTemplate
 vim-scripts/quilt
 vim-scripts/quiltdiff
-vim-scripts/quit_another_window
 vim-scripts/quit-another-window
+vim-scripts/quit_another_window
 vim-scripts/Quotes
 vim-scripts/Quotes--Dimitrov
 vim-scripts/racket-auto-keywords.vim
@@ -5987,8 +5991,8 @@ vim-scripts/VimDebug
 vim-scripts/vim-dict
 vim-scripts/vim-diff
 vim-scripts/vimdir.vim
-vim-scripts/vim_django
 vim-scripts/vim-django
+vim-scripts/vim_django
 vim-scripts/vim-do
 vim-scripts/vim-dtsm
 vim-scripts/vim-easy-align
@@ -6391,8 +6395,8 @@ vim-scripts/xterm16.vim
 vim-scripts/xterm-color-table.vim
 vim-scripts/yacom
 vim-scripts/yaifa.vim
-vim-scripts/yamlvim
 vim-scripts/yaml.vim
+vim-scripts/yamlvim
 vim-scripts/Yankcode
 vim-scripts/Yankitute
 vim-scripts/YankRing.vim
