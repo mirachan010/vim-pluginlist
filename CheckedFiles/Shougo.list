@@ -3,6 +3,16 @@ Blog
 blogger.vim
 clang-server
 context_filetype.vim
+ddc-around
+ddc-converter_remove_overlap
+ddc-matcher_head
+ddc-matcher_length
+ddc-nextword
+ddc-nvim-lsp
+ddc-sorter_rank
+ddc.vim
+ddc-zsh
+ddu.vim
 defx.nvim
 dein.vim
 denite.nvim
@@ -25,6 +35,7 @@ eev.vim
 eskk.vim
 fakecygpty
 go-libclang
+helpful.vim
 junkfile.vim
 mdv
 neco-ghc
