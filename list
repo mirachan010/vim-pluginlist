@@ -2393,8 +2393,15 @@ sheerun/vim-polyglot
 sheerun/vimrc
 sheerun/vim-wombat-scheme
 Shougo/context_filetype.vim
+Shougo/ddc-around
+Shougo/ddc-converter_remove_overlap
+Shougo/ddc-matcher_head
+Shougo/ddc-matcher_length
+Shougo/ddc-nextword
 Shougo/ddc-nvim-lsp
+Shougo/ddc-sorter_rank
 Shougo/ddc.vim
+Shougo/ddc-zsh
 Shougo/defx.nvim
 Shougo/dein.vim
 Shougo/denite.nvim
