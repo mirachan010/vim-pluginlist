@@ -52,7 +52,7 @@ loops(){
     while read line; do
         git clone git://github.com/${NAME}/$line tmp --depth=1 > /dev/null 2>&1
         if ls ./tmp/colors/*.vim >/dev/null 2>&1; then COLOR=1; else COLOR=0; fi
-        if [ -d ./tmp/autoload -o -d ./tmp/plugin -o $COLOR -eq 1 -o -d ./tmp/rplugin/ -o -d ./tmp/lua ];then
+        if [ -d ./tmp/autoload -o -d ./tmp/plugin -o $COLOR -eq 1 -o -d ./tmp/rplugin/ -o -d ./tmp/lua  -o -d ./tmp/denops ];then
             echo ${NAME}/$line >> list_new
             VCOUNT=$(( VCOUNT + 1 ))
             COLOR=0
